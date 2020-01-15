@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+    <div class="container">
+      <h1>Keyboard Event</h1>
+      <p>Keyboard eventovi, kao što se može pretpostaviti, odigravaju se nakon pritiska tastera na tastaturi. To znači da ih koristimo prilikom unosa teksta u input polja.</p>
+      <br>
+      <h3>Keydown</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="ime" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="provera"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p> let btn = document.getElementById('ime')</p>
+           <p> btn.addEventListener('keydown', kydwn)</p>
+
+           <p> let provera = document.getElementById("provera")</p>
+
+            <p>function kydwn(){</p>
+            <p>  provera.style.color = "red";</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="ime" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="provera">Test</p>
+      </form>
+      <br>
+      <h3>Keyup</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="guma" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="promena"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p> let btn0 = document.getElementById("guma")</p>
+           <p> btn0.addEventListener("keyup", kyup)</p>
+
+           <p> let promena = document.getElementById("promena")</p>
+
+            <p>function kyup(){</p>
+            <p>  promena.style.color = "skyblue"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="guma" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="promena">Test</p>
+      </form>
+      <br>
+      <br>
+      <h3>Keypress</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="element" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="dugme"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p> let btn1 = document.getElementById("element")</p>
+           <p> btn1.addEventListener("keypress", kypress)</p>
+
+           <p>let dugme = document.getElementById("dugme")</p>
+
+            <p>function kypress(){</p>
+            <p>   dugme.style.color = "green"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="element" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="dugme">Test</p>
+      </form>
+      <br>
+      <br>
+      <h3>Focus</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="fcs" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="focusButton"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p>let btn2 = document.getElementById("fcs")</p>
+           <p>btn2.addEventListener("focus", focs)</p>
+
+           <p>let focusButton = document.getElementById("focusButton")</p>
+
+            <p>function focs(){</p>
+            <p>   focusButton.style.color = "purple"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="fcs" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="focusButton">Test</p>
+      </form>
+      <br>
+      <h3>Cut</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="cut" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="cutButton"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p>let btn3 = document.getElementById("cut")</p>
+           <p> btn3.addEventListener("cut", ct)</p>
+
+           <p>let cutButton = document.getElementById("cutButton")</p>
+
+            <p>function ct(){</p>
+            <p>    cutButton.style.color = "orange"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="cut" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="cutButton">Test</p>
+      </form>
+      <br>
+      <h3>Paste</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="paste" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="pasteButton"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p>let btn4 = document.getElementById("paste")</p>
+           <p> btn4.addEventListener("paste", pst)</p>
+
+           <p>let pasteButton = document.getElementById("pasteButton")</p>
+
+            <p>function pst(){</p>
+            <p>    pasteButton.style.color = "grey"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="paste" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="pasteButton">Test</p>
+      </form>
+      <h3>Input</h3>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>form<span>></span></p>
+              <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>input class="form-control w-25" type="text" id="input" placeholder="Upišite nešto"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>p class="h3" id="inptButton"<span>></span>Test<span><</span>/p<span>></span></p>
+          <p><span><</span>/form<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+             <p>let btn5 = document.getElementById("input")</p>
+           <p> btn5.addEventListener("input", inpt)</p>
+
+           <p>let inptButton = document.getElementById("inptButton")</p>
+
+            <p>function inpt(){</p>
+            <p>   inptButton.style.color = "yellow"</p>
+           <p> }</p>
+         <p> <span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      
+      <form>
+          <div class="form-group">
+              <input class="form-control w-25" type="text" id="input" placeholder="Upišite nešto">
+            </div>
+            <p class="h3" id="inptButton">Test</p>
+      </form>
+      <br>
+    </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+      // Keydown
+    let btn = document.getElementById('ime')
+    btn.addEventListener('keydown', kydwn)
+
+    let provera = document.getElementById("provera")
+
+    function kydwn(){
+      provera.style.color = "red";
+    }
+    // Keyup
+    let btn0 = document.getElementById("guma")
+    btn0.addEventListener("keyup", kyup)
+
+    let promena = document.getElementById("promena")
+
+    function kyup(){
+      promena.style.color = "skyblue"
+    }
+    // Keypress
+    let btn1 = document.getElementById("element")
+    btn1.addEventListener("keypress", kypress)
+
+    let dugme = document.getElementById("dugme")
+
+    function kypress(){
+      dugme.style.color = "green"
+    }
+    // Focus
+    let btn2 = document.getElementById("fcs")
+    btn2.addEventListener("focus", focs)
+
+    let focusButton = document.getElementById("focusButton")
+
+    function focs(){
+      focusButton.style.color = "purple"
+    }
+    // Cut
+    let btn3 = document.getElementById("cut")
+    btn3.addEventListener("cut", ct)
+
+    let cutButton = document.getElementById("cutButton")
+
+    function ct(){
+      cutButton.style.color = "orange"
+    }
+    // Paste
+    let btn4 = document.getElementById("paste")
+    btn4.addEventListener("paste", pst)
+
+    let pasteButton = document.getElementById("pasteButton")
+
+    function pst(){
+      pasteButton.style.color = "grey"
+    }
+    // Inout
+    let btn5 = document.getElementById("input")
+    btn5.addEventListener("input", inpt)
+
+    let inptButton = document.getElementById("inptButton")
+
+    function inpt(){
+      inptButton.style.color = "yellow"
+    }
+
+    </script>
+  </body>
+</html>

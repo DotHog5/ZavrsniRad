@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Poravnanje</h1>
+       <p>U slučaju da želimo jednostavnije da centriramo tekst, pomerimo ga u levo ili u desno, možemo to učiniti pomoću sledećih klasa.</p>
+       <br>
+       <section class="section-1 card">
+          <p><span><</span>p class="text-left"<span>></span>Tekst levo<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="text-center"<span>></span>Centriran tekst<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="text-right"<span>></span>Teskst u desno<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+       <p class="text-left">Tekst levo</p>
+       <p class="text-center">Centriran tekst</p>
+       <p class="text-right">Tekst desno</p>
+       <br>
+       <p>Takođe možemo justify da stavimo na veći deo teksta, tako da on bude od ivice do ivice:</p>
+       <br>
+       <section class="section-1 card">
+         <p> <span><</span>p class="text-justify"<span>></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae asperiores dolorem
+              accusamus
+              dolor eligendi,
+              unde adipisci
+              a odio, quas aperiam tempora earum delectus magnam quia veritatis in! Natus quibusdam dolores architecto magni
+              rem!
+              Error repellat esse dolorem dolore neque odit rem non accusamus eligendi ab nesciunt dicta voluptatibus velit, vel
+              obcaecati quisquam optio reiciendis soluta tempora, voluptatum sapiente eos? Explicabo provident sit commodi
+              blanditiis
+              assumenda dolor ex aliquid aut beatae porro necessitatibus eos, neque distinctio non amet nemo et! Ipsum, dolorum
+              quis
+              at perferendis corporis iure aliquid illo, deserunt impedit, quod nam! Molestias atque voluptatem numquam
+              veritatis
+              ex mollitia eveniet.<span><</span>/p<span>></span></p> 
+       </section>
+       <br>
+       <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae asperiores dolorem
+          accusamus
+          dolor eligendi,
+          unde adipisci
+          a odio, quas aperiam tempora earum delectus magnam quia veritatis in! Natus quibusdam dolores architecto magni
+          rem!
+          Error repellat esse dolorem dolore neque odit rem non accusamus eligendi ab nesciunt dicta voluptatibus velit, vel
+          obcaecati quisquam optio reiciendis soluta tempora, voluptatum sapiente eos? Explicabo provident sit commodi
+          blanditiis
+          assumenda dolor ex aliquid aut beatae porro necessitatibus eos, neque distinctio non amet nemo et! Ipsum, dolorum
+          quis
+          at perferendis corporis iure aliquid illo, deserunt impedit, quod nam! Molestias atque voluptatem numquam
+          veritatis
+          ex mollitia eveniet.</p>
+          <br>
+        <h3>Responsivno poravnanje</h3>
+        <br>
+        <p>Bootstrap je uveo automatski responsivne klase, upotebom kojih možemo do željenog responsivnog koda mnogo lakše doći. Uvedeno je četiri veličine -sm, -md, -lg, -xl, pomoću kojih pravimo responsivan dizajn mnogo jednostavnije, jer samom upotrebom njih sajt postaje responsivan.</p>
+        <br>
+        <section class="section-1 card">
+            <p><span><</span>p class="text-sm-right"<span>></span>Desno poravnanje na malim ili velikim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-md-right"<span>></span>Desno poravnanje na srednjim ili velikim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-lg-right"<span>></span>Desno poravnanje na velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-xl-right"<span>></span>Desno poravnanje na jako velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+            <p>---------------------------------------------------------------------------------</p>
+            <p><span><</span>p class="text-sm-left"<span>></span>Levo poravnanje na malim ili velikim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-md-left"<span>></span>Levo poravnanje na srednjim ili velikim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-lg-left"<span>></span>Levo poravnanje na velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+            <p><span><</span>p class="text-xl-left"<span>></span>Levo poravnanje na jako velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+            <p>---------------------------------------------------------------------------------</p>
+          <p><span><</span>p class="text-sm-center"<span>></span>Centriran tekst na malim ili velikim uređajima<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="text-md-center"<span>></span>Centriran tekst na srednjim ili velikim uređajima<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="text-lg-center"<span>></span>Centriran tekst na velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="text-xl-center"<span>></span>Centriran tekst na jako velikim ili širokim uređajima<span><</span>/p<span>></span></p>
+           
+         </section>
+         <br>
+    
+        <p class="text-sm-right">Desno poravnanje na malim ili velikim uređajima</p>
+        <p class="text-md-right">Desno poravnanje na srednjim ili velikim uređajima</p>
+        <p class="text-lg-right">Desno poravnanje na velikim ili širokim uređajima</p>
+        <p class="text-xl-right">Desno poravnanje na jako velikim ili širokim uređajima</p>
+
+        <p class="text-sm-left">Levo poravnanje na malim ili velikim uređajima</p>
+        <p class="text-md-left">Levo poravnanje na srednjim ili velikim uređajima</p>
+        <p class="text-lg-left">Levo poravnanje na velikim ili širokim uređajima</p>
+        <p class="text-xl-left">Levo poravnanje na jako velikim ili širokim uređajima</p>
+
+        <p class="text-sm-center">Centriran tekst malim ili velikim uređajima</p>
+        <p class="text-md-center">Centriran tekst srednjim ili velikim uređajima</p>
+        <p class="text-lg-center">Centriran tekst velikim ili širokim uređajima</p>
+        <p class="text-xl-center">Centriran tekst jako velikim ili širokim uređajima</p>
+
+      <h3>Vertikalno poravnanje</h3>
+      <section class="section-1 card">
+          <p><span><</span>span class="align-baseline"<span>></span>baseline<span><</span>/span<span>></span></p>
+          <p><span><</span>span class="align-top"<span>></span>top<span><</span>/span<span>></span></p>
+          <p><span><</span>span class="align-bottom"<span>></span>bottom<span><</span>/span<span>></span></p>
+          <p><span><</span>span class="align-middle"<span>></span>middle<span><</span>/span<span>></span></p>
+          <p><span><</span>span class="align-text-bottom"<span>></span>bottom<span><</span>/span<span>></span></p>
+          <p><span><</span>span class="align-text-top"<span>></span>top<span><</span>/span<span>></span></p>
+      </section>
+      <br>
+      <span class="align-baseline">baseline</span>
+      <span class="align-top">top</span>
+      <span class="align-bottom">bottom</span>
+      <span class="align-middle">middle</span>
+      <span class="align-text-top">text-top</span>
+      <span class="align-text-bottom">text-bottom</span>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

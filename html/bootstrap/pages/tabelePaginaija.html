@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>Tabele i Paginacija</h1>
+        <p>Tabele se ne koriste više toliko često kao i ranije(pre je cela struktura HTML kretala iz tabela), zbog toga se tabele ređe sreću na internetu i sda zapravo služe samo za tabelarni prikaz nekih podataka.</p>
+        <br>
+        <h3>Tabele</h3>
+        <p>Samim dodatkom klase table promenićemo čitav izgled tabele.</p>
+        <br>
+        <section class="section-1 card">
+       <p> <span><</span>table class="table"<span>></span></p>
+       <p>   <span><</span>thead<span>></span></p>
+       <p>     <span><</span>tr<span>></span></p>
+       <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+       <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+       <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+       <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+       <p>     <span><</span>/tr<span>></span></p>
+       <p>   <span><</span>/thead<span>></span></p>
+       <p>   <span><</span>tbody<span>></span></p>
+       <p>     <span><</span>tr<span>></span></p>
+       <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+       <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+       <p>     <span><</span>/tr<span>></span></p>
+       <p>     <span><</span>tr<span>></span></p>
+       <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+       <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+       <p>     <span><</span>/tr<span>></span></p>
+       <p>     <span><</span>tr<span>></span></p>
+       <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+       <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+       <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+       <p>     <span><</span>/tr<span>></span></p>
+       <p>   <span><</span>/tbody<span>></span></p>
+       <p> <span><</span>/table<span>></span><p></p>
+      </section>
+        <br>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Tamna tabela</h4>
+        <p>Invertovane boje tabele</p>
+        <br>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table table-dark"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+         <br>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+        <h4>Glava tabele tamna</h4>
+        <section class="section-1 card">
+        <p> <span><</span>table class="table"<span>></span></p>
+          <p>   <span><</span>thead class="table-dark"<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+         <br>
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Prugasta tabela</h4>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table table-striped"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+        <br>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <h4>Tabela sa borderom</h4>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table table-bordered"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Tabela bez ikakvih bordera</h4>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table table-borderless"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+        <br>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+      <h4>Hoverable tabela</h4>
+      <section class="section-1 card">
+        <p> <span><</span>table class="table table-hover"<span>></span></p>
+        <p>   <span><</span>thead<span>></span></p>
+        <p>     <span><</span>tr<span>></span></p>
+        <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+        <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+        <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+        <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+        <p>     <span><</span>/tr<span>></span></p>
+        <p>   <span><</span>/thead<span>></span></p>
+        <p>   <span><</span>tbody<span>></span></p>
+        <p>     <span><</span>tr<span>></span></p>
+        <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+        <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+        <p>     <span><</span>/tr<span>></span></p>
+        <p>     <span><</span>tr<span>></span></p>
+        <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+        <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+        <p>     <span><</span>/tr<span>></span></p>
+        <p>     <span><</span>tr<span>></span></p>
+        <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+        <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+        <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+        <p>     <span><</span>/tr<span>></span></p>
+        <p>   <span><</span>/tbody<span>></span></p>
+        <p> <span><</span>/table<span>></span><p></p>
+       </section>
+      <br>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Kontekstualna tabela</h4>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr class="table-success"<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr class="table-danger"<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr class="table-warning"<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+         
+        <br>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Mala tabela</h4>
+        <section class="section-1 card">
+          <p> <span><</span>table class="table table-sm"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+         </section>
+        <br>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ime</th>
+              <th>Prezime</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ivan</td>
+              <td>Marković</td>
+              <td>imarkovic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milica</td>
+              <td>Ivanić</td>
+              <td>mivanic@test.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Goran</td>
+              <td>Kornelić</td>
+              <td>gorank@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <br>
+    
+        <h4>Tabela sa skrolbarom</h4>
+        <section class="section-1 card">
+           <p> <span><</span>div class="table-responsive"<span>></span></p>
+          <p> <span><</span>table class="table"<span>></span></p>
+          <p>   <span><</span>thead<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th<span>></span>#<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Ime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Prezime<span><</span>/th<span>></span></p>
+          <p>       <span><</span>th<span>></span>Email<span><</span>/th<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/thead<span>></span></p>
+          <p>   <span><</span>tbody<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>1<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivan<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Marković<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>imarkovic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>2<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Milica<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Ivanić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>mivanic@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>     <span><</span>tr<span>></span></p>
+          <p>       <span><</span>th scope="row"<span>></span>3<span><</span>/th<span>></span></p>
+          <p>       <span><</span>td<span>></span>Goran<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>Kornelić<span><</span>/td<span>></span></p>
+          <p>       <span><</span>td<span>></span>gorank@test.com<span><</span>/td<span>></span></p>
+          <p>     <span><</span>/tr<span>></span></p>
+          <p>   <span><</span>/tbody<span>></span></p>
+          <p> <span><</span>/table<span>></span><p></p>
+           <p><span><</span>/div<span>></span></p>
+         </section>
+        <br>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ivan</td>
+                <td>Marković</td>
+                <td>imarkovic@test.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Milica</td>
+                <td>Ivanić</td>
+                <td>mivanic@test.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Goran</td>
+                <td>Kornelić</td>
+                <td>gorank@test.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <br>
+        <br>
+        <h3>Paginacija</h3>
+        <p>Paginacija su buttoni kojima se može kretati napred ili unazad ili na neku određenu stranicu.</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>nav<span>></span>
+           <p> <span><</span>ul class="pagination justify-content-center"<span>></span></p>
+            <p>  <span><</span>li class="page-item disabled"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>Previous<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item active"<span>></span></p>
+              <p>  <span><</span>a class="page-link bg-dark" href="#"<span>></span>1<span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+              <p>/*Boju pozadine naravno možemo menjati.*/</p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>2<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>3<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+              <p>  <span><</span>a class="page-link" href="#"<span>></span>Next<span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+           <p> <span><</span>/ul<span>></span></p>
+         <p> <span><</span>/nav<span>></span></p>
+        </section>
+        <br>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link bg-dark" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+    
+    
+        <h4>Veća paginacija</h4>
+        <section class="section-1 card">
+          <p><span><</span>nav<span>></span></p>
+           <p> <span><</span>ul class="pagination justify-content-center pagination-lg"<span>></span></p>
+            <p>  <span><</span>li class="page-item disabled"<span>></span></p>
+            <p>    <span><</span>a class="page-link" href="#"<span>></span>Previous<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item active"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>1<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>2<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>3<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+             <p> <span><</span>li class="page-item"<span>></span></p>
+             <p>   <span><</span>a class="page-link" href="#"<span>></span>Next<span><</span>/a<span>></span></p>
+             <p> <span><</span>/li<span>></span></p>
+           <p> <span><</span>/ul<span>></span><p></p>
+          <p><span><</span>/nav<span>></span></p>
+        </section>
+        <br>
+        <nav>
+          <ul class="pagination justify-content-center pagination-lg">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <h4>Manja paginacija</h4>
+        <section class="section-1 card">
+          <p><span><</span>nav<span>></span></p>
+          <p> <span><</span>ul class="pagination justify-content-center pagination-sm"<span>></span></p>
+           <p>  <span><</span>li class="page-item disabled"<span>></span></p>
+           <p>    <span><</span>a class="page-link" href="#"<span>></span>Previous<span><</span>/a<span>></span></p>
+            <p> <span><</span>/li<span>></span></p>
+            <p> <span><</span>li class="page-item active"<span>></span></p>
+            <p>   <span><</span>a class="page-link" href="#"<span>></span>1<span><</span>/a<span>></span></p>
+            <p> <span><</span>/li<span>></span></p>
+            <p> <span><</span>li class="page-item"<span>></span></p>
+            <p>   <span><</span>a class="page-link" href="#"<span>></span>2<span><</span>/a<span>></span></p>
+            <p> <span><</span>/li<span>></span></p>
+            <p> <span><</span>li class="page-item"<span>></span></p>
+            <p>   <span><</span>a class="page-link" href="#"<span>></span>3<span><</span>/a<span>></span></p>
+            <p> <span><</span>/li<span>></span></p>
+            <p> <span><</span>li class="page-item"<span>></span></p>
+            <p>   <span><</span>a class="page-link" href="#"<span>></span>Next<span><</span>/a<span>></span></p>
+            <p> <span><</span>/li<span>></span></p>
+          <p> <span><</span>/ul<span>></span><p></p>
+         <p><span><</span>/nav<span>></span></p>
+        </section>
+        <br>
+        <nav>
+          <ul class="pagination justify-content-center pagination-sm">
+            <li class="page-item disabled bg-dark">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <h4>Sa strelicma</h4>
+        <section class="section-1 card">
+         <p> <span><</span>nav<span>></span></p>
+          <p>  <span><</span>ul class="pagination justify-content-center"<span>></span></p>
+            <p>  <span><</span>li class="page-item disabled"<span>></span></p>
+              <p>  <span><</span>a class="page-link" href="#"<span>></span><span><</span>span<span>></span><span>&</span>laquo;<span><</span>/span<span>></span><span><</span>span class="sr-only"<span>></span>Previous<span><</span>/span<span>></span><span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+              <p><span><</span>li class="page-item active"<span>></span></p>
+              <p>  <span><</span>a class="page-link" href="#"<span>></span>1<span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+              <p><span><</span>li class="page-item"<span>></span></p>
+              <p>  <span><</span>a class="page-link" href="#"<span>></span>2<span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+              <p><span><</span>li class="page-item"<span>></span></p>
+              <p>  <span><</span>a class="page-link" href="#"<span>></span>3<span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+              <p><span><</span>li class="page-item"<span>></span></p>
+               <p> <span><</span>a class="page-link" href="#"<span>></span><span><</span>span<span>></span><span>&</span>raquo;<span><</span>/span<span>></span><span><</span>span class="sr-only"<span>></span>Next<span><</span>/span><span><</span>/a<span>></span></p>
+              <p><span><</span>/li<span>></span></p>
+            <p><span><</span>/ul<span>></span></p>
+         <p><span><</span>/nav<span>></span></p>
+        </section>
+        
+        <br>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#"><span>&laquo;</span><span class="sr-only">Previous</span></a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"><span>&raquo;</span><span class="sr-only">Next</span></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@test.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

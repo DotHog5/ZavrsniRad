@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a>
+          </li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>DOM selektori za više elemenata</h1>
+        <p>Kao što se može videti iz naslova u ovoj lekciji ćemo raditi višestruke selektore elemenata</p>
+        <br>
+        <h3>getElementByClassName()</h3>
+        <br>
+        <p>Svim elementi koji imaju istu klasu imamo pristup pomoću getElementByClassName(). </p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>ul id="list"<span>></span> </p>
+          <p>  <span><</span>li class="list-element list-element"<span>></span>1. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item" id="list"<span>></span>2. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>3. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item list-element"<span>></span>4. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>5. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>6. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>7. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>8. Primer<span><</span>/li<span>></span></p>
+         <p> <span><</span>/ul<span>></span></p>
+         <p> <span><</span>script<span>></span></p>
+           <p> console.log(document.getElementsByClassName('list-element'))</p>
+        <p>  <span><</span>/script<span>></span></p>
+          <p>-> HTMLCollection(5) [li.list-element.list-element, li.list-element, li.list-item.list-element, li.list-element, li.list-element]</p>
+          <p>/*Dobijamo HTML kolekciju, broj članova u kolekciji i koji su to članovi.*/</p>
+        </section>
+        <br>
+        <p>Kod ovog selektora moramo dodatno korisitit petlju, jer je dobijeni rezultat kolekcija.</p>
+        <br>
+        <h3>getElementByTagName()</h3>
+        <br>
+        <p>Svim elementi koji imaju isti tag imamo pristup pomoću getElementByTagName(). </p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>ul id="list"<span>></span> </p>
+          <p>  <span><</span>li class="list-element list-element"<span>></span>1. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item" id="list"<span>></span>2. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>3. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item list-element"<span>></span>4. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>5. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>6. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>7. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>8. Primer<span><</span>/li<span>></span></p>
+         <p> <span><</span>/ul<span>></span></p>
+         <p> <span><</span>script<span>></span></p>
+           <p>const liElement = document.querySelectorAll('.list-element')</p>
+           <p>const liItem = document.querySelectorAll('.list-item')</p>
+          <p> liElement.forEach(function (li) {</p>
+          <p>  li.style.background = 'grey'</p>
+         <p> })</p>
+         <p> liItem.forEach(function (li) {</p>
+          <p>  li.style.background = 'skyblue'</p>
+         <p> })</p>
+        <p>  <span><</span>/script<span>></span></p>
+        <ul class="list">
+            <li class="list-element list-element" >1. Primer</li>
+            <li class="list-item" id="list">2. Primer</li>
+            <li class="list-element">3. Primer</li>
+            <li class="list-item list-element">4. Primer</li>
+            <li class="list-item" >5. Primer</li>
+            <li class="list-element">6. Primer</li>
+            <li class="list-element">7. Primer</li>
+            <li class="list-item">8. Primer</li>
+          </ul>
+          
+        </section>
+        <br>
+        <h3>querySelectorAll()</h3>
+        <br>
+        <p>Za razliku od querySelector(), querySelectorAll() selektuje sve elemente sa datom klasom ili tagom. Omogućava nam jednostavan pristup i menjanje grupe HTML elemenata sa istom klasom ili tagom.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>ul id="list"<span>></span> </p>
+          <p>  <span><</span>li class="list-element list-element"<span>></span>1. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item" id="list"<span>></span>2. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>3. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item list-element"<span>></span>4. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>5. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>6. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-element"<span>></span>7. Primer<span><</span>/li<span>></span></p>
+          <p>  <span><</span>li class="list-item"<span>></span>8. Primer<span><</span>/li<span>></span></p>
+         <p> <span><</span>/ul<span>></span></p>
+         <p> <span><</span>script<span>></span></p>
+        <p> let prom = document.querySelectorAll('.list-element')</p>
+         <p>prom.forEach(function(item, index){</p>
+         <p>  item.textContent = `${index}: Zdravo`</p>
+         <p>  })</p>
+        <p>  <span><</span>/script<span>></span></p>
+       <p> 0: Zdravo </p>
+       <p> 2. Primer </p>
+       <p> 1: Zdravo </p>
+       <p> 2: Zdravo </p>
+       <p> 5. Primer </p>
+       <p> 3: Zdravo </p>
+       <p> 4: Zdravo </p>
+       <p> 8. Primer </p>
+       <p>/*Brojevi izgledaju ovako razbacano jer su samo elementi sa klasom list-element promenjeni i ispred njih stoji broj njihovog indexa*/</p>
+        </section>
+        <br>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+      const liElement = document.querySelectorAll('.list-element');
+const liItem = document.querySelectorAll('.list-item');
+liElement.forEach(function (li) {
+  li.style.background = 'grey'
+});
+liItem.forEach(function (li) {
+  li.style.background = 'skyblue'
+});
+    </script>
+  </body>
+</html>

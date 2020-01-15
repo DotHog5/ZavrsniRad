@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Buttons </h1>
+       <p>Koristite prilagođene stilove tastera Bootstrapa za radnje u obrascima, dijalozima i više sa podrškom za više veličina, stanja i sl.</p>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>button class="btn btn-primary" type="button"<span>></span>Primary<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-secondary" type="button"<span>></span>Secondary<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-success" type="button"<span>></span>Success<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-info" type="button"<span>></span>Info<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-warning" type="button"<span>></span>Warning<span><</span>/button<span>></span>
+        <p><span><</span>button class="btn btn-danger" type="button"<span>></span>Danger<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-light" type="button"<span>></span>Light<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-dark" type="button"<span>></span>Dark<span><</span>/button<span>></span></p>
+        <p><span><</span>button class="btn btn-link" type="button"<span>></span>Link<span><</span>/button<span>></span></p>
+       </section>
+       <br>
+       <button class="btn btn-primary" type="button">Primary</button>
+        <button class="btn btn-secondary" type="button">Secondary</button>
+        <button class="btn btn-success" type="button">Success</button>
+        <button class="btn btn-info" type="button">Info</button>
+        <button class="btn btn-warning" type="button">Warning</button>
+        <button class="btn btn-danger" type="button">Danger</button>
+        <button class="btn btn-light" type="button">Light</button>
+        <button class="btn btn-dark" type="button">Dark</button>
+        <button class="btn btn-link" type="button">Link</button>
+        <br>
+        <br>
+        <h3>Outline Buttons</h3>
+        <p>Potrebno vam je dugme, ali ne i silne boje pozadine koje donose? Zamenite podrazumevane klase modifikatora s .btn-outline-* da biste uklonili sve pozadinske slike i boje na bilo kom tasteru.</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>button class="btn btn-outline-primary" type="button<span>></span> Primary Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-secondary" type="button<span>></span> Secondary Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-success" type="button<span>></span> Success Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-info" type="button<span>></span> Info Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-warning" type="button<span>></span> Warning Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-danger" type="button<span>></span> Danger Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-light" type="button<span>></span> Light Outline<span><</span>/button<span>></span> </p>
+          <p><span><</span>button class="btn btn-outline-dark" type="button<span>></span> Dark Outline<span><</span>/button<span>></span> </p>
+        </section>
+        <br>
+          <button class="btn btn-outline-primary" type="button">Primary Outline</button>
+          <button class="btn btn-outline-secondary" type="button">Secondary Outline</button>
+          <button class="btn btn-outline-success" type="button">Success Outline</button>
+          <button class="btn btn-outline-info" type="button">Info Outline</button>
+          <button class="btn btn-outline-warning" type="button">Warning Outline</button>
+          <button class="btn btn-outline-danger" type="button">Danger Outline</button>
+          <button class="btn btn-outline-light text-dark" type="button">Light Outline</button>
+          <button class="btn btn-outline-dark" type="button">Dark Outline</button>
+          <br>
+          <br>
+          <h3>Stanje Buttona</h3>
+          <p>Za promene stanja buttona koristimo sledeće klase:</p>
+          <br>
+          <section class="section-1 card">
+            <p><span><</span>button class="btn btn-light" type="button"<span>></span>Regular Button<span><</span>/button<span>></span></p>
+            <p><span><</span>button class="btn btn-light active" type="button"<span>></span>Active Button<span><</span>/button<span>></span></p>
+            <p><span><</span>button class="btn btn-light disabled" type="button"<span>></span>Disabled Button<span><</span>/button<span>></span></p>
+          </section>
+          <br>
+            <button class="btn btn-light" type="button">Regular Button</button>
+            <button class="btn btn-light active" type="button">Active Button</button>
+            <button class="btn btn-light disabled" type="button">Disabled Button</button>
+            <br>
+            <br>
+          <h3>Veličina Buttona</h3>
+          <p>Za promenu veličine buttona koristimo dve jednostavne klase:</p>
+          <br>
+          <section class="section-1 card">
+            <p><span><</span>button class="btn btn-warning btn-lg" type="button"<span>></span>Large button<span><</span>/button<span>></span></p>
+            <p><span><</span>button class="btn btn-info btn-sm" type="button"<span>></span>Small button<span><</span>/button<span>></span></p>
+            <p><span><</span>br<span>></span></p>
+            <p><span><</span>br<span>></span></p>
+            <p><span><</span>button class="btn btn-success btn-block" type="button"<span>></span>Block level button<span><</span>/button<span>></span></p>
+          </section>
+          <br>
+          <button class="btn btn-warning btn-lg" type="button">Large button</button>
+          <button class="btn btn-info btn-sm" type="button">Small button</button>
+          <br>
+          <br>
+          <button class="btn btn-success btn-block" type="button">Block level button</button>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

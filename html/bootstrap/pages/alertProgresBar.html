@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>Alerti i Progres Barovi</h1>
+        <p>Alerti su slični po strukturi background bojama iz Bootstrapa, uz razliku što se koriste da bi obavestili nešto i za svako obaveštenje ima posebna kalsa.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div class="alert alert-primary"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Primary<span><</span>/strong<span>></span> Dodata objava!
+          <span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="alert alert-secondary"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Secondary<span><</span>/strong<span>></span> Dodata objava!
+         <span><</span>/div<span>></span></p>
+      
+         <p> <span><</span>div class="alert alert-success"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Success<span><</span>/strong<span>></span> Dodata objava!
+         <span><</span>/div<span>></span></p>
+      
+          <p><span><</span>div class="alert alert-danger"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Danger<span><</span>/strong<span>></span> Molimo Vas proverite Vaše podatke
+         <span><</span>/div<span>></span></p>
+      
+         <p> <span><</span>div class="alert alert-info"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Info<span><</span>/strong<span>></span> Imate novu poruku
+         <span><</span>/div<span>></span></p>
+      
+         <p> <span><</span>div class="alert alert-warning"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Warning<span><</span>/strong<span>></span> Molimo Vas proverite Vaše podatke
+         <span><</span>/div<span>></span></p>
+      
+         <p> <span><</span>div class="alert alert-light"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Light<span><</span>/strong<span>></span> Molimo Vas proverite Vaše podatke
+         <span><</span>/div<span>></span></p>
+      
+         <p> <span><</span>div class="alert alert-dark"<span>></span></p>
+         <p>   <span><</span>strong<span>></span>Dark<span><</span>/strong<span>></span> Molimo Vas proverite Vaše podatke
+         <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="alert alert-primary">
+          <strong>Primary</strong> Dodata objava!
+        </div>
+    
+        <div class="alert alert-secondary">
+          <strong>Secondary</strong> Dodata objava!
+        </div>
+    
+        <div class="alert alert-success">
+          <strong>Success</strong> Dodata objava!
+        </div>
+    
+        <div class="alert alert-danger">
+          <strong>Danger</strong> Molimo Vas proverite Vaše podatke
+        </div>
+    
+        <div class="alert alert-info">
+          <strong>Info</strong> Imate novu poruku
+        </div>
+    
+        <div class="alert alert-warning">
+          <strong>Warning</strong> Molimo Vas proverite Vaše podatke
+        </div>
+    
+        <div class="alert alert-light">
+          <strong>Light</strong> Molimo Vas proverite Vaše podatke
+        </div>
+    
+        <div class="alert alert-dark">
+          <strong>Dark</strong> Molimo Vas proverite Vaše podatke
+        </div>
+        <br>
+        <h3>Uklanjajući Alert</h3>
+        <p>U slučaju da želimo da manuelno uklonimo alert, to možemo učinit pomoću sledećih klasa:</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div class="alert alert-success alert-dismissable"<span>></span></p>
+          <p>  <span><</span>button class="close" type="button" data-dismiss="alert"<span>></span></p>
+           <p>   <span><</span>span<span>></span><span>&</span>times;<span><</span>/span<span>></span></p>
+           <p> <span><</span>/button<span>></span></p>
+           <p> <span><</span>strong>Uklanjajuće<span><</span>/strong<span>></span> Došlo je do greške
+         <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="alert alert-danger alert-dismissable">
+          <button class="close" type="button" data-dismiss="alert">
+            <span>&times;</span>
+          </button>
+          <strong>Uklanjajuće</strong> Došlo je do greške
+        </div>
+        <br>
+        <h3>Dodatan sadržaj</h3>
+        <p>Koristimo ga ako želimo nešto dodatno da napišemo u našim alertima</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>div class="alert alert-success"<span>></span></p>
+          <p> <span><</span>h4 class="alert-heading"<span>></span>Čestitamo!<span><</span>/h4<span>></span></p>
+          <p> <span><</span>p>Vi ste srećni dobitnik ovogodišnje nagrade!<span><</span>/p<span>></span></p>
+            <p><span><</span>hr<span>></span></p>
+          <p> <span><</span>p class="mb-0"<span>></span>Pametno uložite nagradu koju ste dobili!<span><</span>/p<span>></span>
+          <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="alert alert-success">
+          <h4 class="alert-heading">Čestitamo!</h4>
+          <p>Vi ste srećni dobitnik ovogodišnje nagrade!</p>
+          <hr>
+          <p class="mb-0">Pametno uložite nagradu koju ste dobili!</p>
+        </div>
+        <br>
+        <h3>Progres Barovi</h3>
+        <p>Često korišćeni u situacijamagde se treba predstavi neki progres, dosta su popularni.</p>
+        <br>
+        <section class="section-1 card">
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar" style="width: 35%"<span>></span><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar" style="width: 35%"<span>></span>35%<span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-success" style="width: 35%"<span>></span><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-warning" style="width: 50%"<span>></span><span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-info" style="width: 15%"<span>></span><span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          
+          <p ><span><</span>div class="progress" style="height: 5px"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-dark" style="width: 60%"<span>></span><span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+          <p><span><</span>br<span>></span></p>
+          <p>/*Promena visine*/</p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-danger progress-bar-striped" style="width: 35%"<span>></span><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+          <p><span><</span>br<span>></span></p>
+          <p>/*Sa prugama*/</p>
+          
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 35%"<span>></span><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+         <p> <span><</span>br<span>></span></p>
+          <p>/*Animirano*/</p>
+          <p>
+          <p ><span><</span>div class="progress"<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 25%"<span>></span><span><</span>/div<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 25%"<span>></span><span><</span>/div<span>></span></p>
+            <p ><span><</span>div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 25%"<span>></span><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+          <p>/*Više barova od jednom*/</p>
+      
+        </section>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 35%"></div>
+        </div></p>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width: 35%">35%</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 35%"></div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 50%"></div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 15%"></div>
+        </div>
+        <br>
+        
+        <div class="progress" style="height: 5px">
+          <div class="progress-bar bg-dark" style="width: 60%"></div>
+        </div>
+        <br>
+        
+        <div class="progress">
+          <div class="progress-bar bg-danger progress-bar-striped" style="width: 35%"></div>
+        </div>
+        <br>
+        
+        <div class="progress">
+          <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 35%"></div>
+        </div>
+        <br>
+        
+        <div class="progress">
+          <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 25%"></div>
+          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 25%"></div>
+          <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 25%"></div>
+        </div>
+
+          </div>
+        </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

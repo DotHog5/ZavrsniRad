@@ -1,0 +1,81 @@
+/* Section Header */
+.menu-wrap .wrap-a {
+  font-size: 2.2rem;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  font-size: 2rem;
+}
+
+/* Section Main */
+main .container .js {
+  position: absolute;
+  top: 22rem;
+  left: 10rem;
+}
+
+main .container .js h2,
+main .container .bootstrap h2 {
+  font-size: 3rem;
+}
+
+main .container .bootstrap {
+  position: absolute;
+  bottom: 18rem;
+  right: 10rem;
+}
+
+main .container .js i,
+main .container .js p,
+main .container .bootstrap i,
+main .container .bootstrap p {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main .container .js:hover i,
+main .container .js:hover p {
+  visibility: visible;
+  animation: moveleft 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+@keyframes moveleft {
+  from {
+    opacity: 0;
+    left: 20px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+main .container .bootstrap:hover i,
+main .container .bootstrap:hover p {
+  visibility: visible;
+  animation: moveright 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+@keyframes moveright {
+  from {
+    opacity: 0;
+    left: 20px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+main .container .bootstrap i,
+main .container .bootstrap p {
+  color: #fff;
+}
+
+main .container .js p,
+main .container .bootstrap p {
+  font-weight: normal;
+  padding: 0.5rem;
+}

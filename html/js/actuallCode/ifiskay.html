@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+    <div class="container">
+      <h1>If Iskaz</h1>
+      <p>Kod if iskaza izvrsiće se jedan deo koda, ako je ispunjen uslov, ili neki drugi iskaz, ako je kod njega ispunjen uslov.</p>
+      <br>
+      <section class="section-1 card">
+        <p>const id = 100;</p>
+        <p>if (id == 100){</p>
+          <p>console.log("Tačno!")</p>
+       <p> } else {</p>
+         <p>console.log("Netačno!")</p>
+      <p>}</p>
+      <p>-> Tačno</p>
+      <p>/*Moramo obratiti pažnju da NE stavimo jedan znak jednakosti, jer on predstavlja dodelu vrednosti, a nama treba znak za poredjenje!!*/</p>
+      </section>
+      <br>
+      <p>Takođe možemo proveriti da li neka vrednost nije jednaka:</p>
+      <section class="section-1 card">
+          <p>if (id != 100){</p>
+            <p>console.log("Tačno!")</p>
+         <p> } else {</p>
+           <p>console.log("Netačno!")</p>
+        <p>}</p>
+        <p>-> Tačno!</p>
+      </section>
+        <br>
+      <h3>Poredjenje po vrednosti i tipu</h3>
+      <p>Ako želimo da poredimo i po vrednosti i po tipu onda stavljamo tri znaka jednakosti(===).</p>
+      <br>
+      <section class="section-1 card">
+          <p>if (id === "100"){</p>
+            <p>console.log("Tačno!")</p>
+         <p> } else {</p>
+           <p>console.log("Netačno!")</p>
+        <p>}</p>
+        <p>-> Netačno!</p>
+        <p>/*Stavljanjem navodnika smo pretvorili 100 u string i time dobijamo kao rezultat netačno, jer je id tipa int*/</p>
+      </section>  
+      <br>
+      <p>Provera da li neki iskaz nije jednak po vrednosti i tipu:</p>
+      <br>
+      <section class="section-1 card">
+          <p>if (id !== "100"){</p>
+            <p>console.log("Tačno!")</p>
+         <p> } else {</p>
+           <p>console.log("Netačno!")</p>
+        <p>}</p>
+        <p>-> Tačno!</p>
+      </section>  
+      <br>
+      <h3>Veće ili manje</h3>
+      <section class="section-1 card">
+          <p>if (id > 150){</p>
+            <p>console.log("Tačno!")</p>
+         <p> } else {</p>
+           <p>console.log("Netačno!")</p>
+        <p>}</p>
+        <p>-> Netačno!</p>
+      </section>  
+      <br>
+      <section class="section-1 card">
+          <p>if (id < 150){</p>
+            <p>console.log("Tačno!")</p>
+         <p> } else {</p>
+           <p>console.log("Netačno!")</p>
+        <p>}</p>
+        <p>-> Tačno!</p>
+      </section>  
+      <br>
+      <h3>Else if</h3>
+      <p>Pored if i else imamo i treću mogućnost, else if. Else if možemo da koristimo koliko puta želimo, u zavisnoti koliko iskaza nam treba.</p>
+      <br>
+      <section class="section-1 card">
+        <p>const boja = "plava"</p>
+          <p>if (boja === "crvena"){</p>
+            <p>console.log("Boja je crvena!")</p>
+         <p> } else if(boja === "zelena") {</p>
+           <p>console.log("Boja je zelena!")</p>
+        <p> } else if(boja === "bela") {</p>
+          <p>console.log("Boja je bela!")</p>
+       <p>} else{</p>
+        <p>console.log("Boja nije ni crvena, ni zelena, ni bela.")</p>
+        <p>}</p>
+        <p>-> Boja nije ni crvena, ni zelena, ni bela.</p>
+      </section>  
+      <br>
+      <h3>Logički operateri</h3>
+      <br>
+      <section class="section-1 card">
+        <p>const ime = "Ivan"</p>
+        <p>const god = 19</p>
+      </section>
+      <br>
+      <h4>And &&</h4>
+      <section class="section-1 card">
+          <p>if (god > 0 && god < 12){</p>
+            <p>console.log(`${ime} je dete`)</p>
+            <p>/*Ovde uvodimo template literal, koji nam omogućava da koristimo neku promenljivu, a da pritom ne pišemo njenu vrednost direktno u kod. Takođe ovde se primenjuju ``, a ne ""!*/</p>
+         <p> } else if(god >= 13 && god <= 19) {</p>
+           <p>console.log(`${ime} je tinejdžer`)</p>
+       <p>} else{</p>
+        <p>console.log(`${ime} je odrastao`)</p>
+        <p>}</p>
+        <p>-> Ivan je tinejdžer</p>
+      </section>  
+      <br>
+      <h4>Or ||</h4>
+      <section class="section-1 card">
+          <p>if (god < 16 || god > 65){</p>
+            <p>console.log(`${ime} ne može da se trka`)</p>
+       <p>} else{</p>
+        <p>console.log(`${ime} može da se trka`)</p>
+        <p>}</p>
+        <p>-> Ivan može da se trka</p>
+      </section>
+      <br>
+      <h3>Terinarni operater</h3>
+      <p>Predstavlja isto if iskaz, ali u skraćenom obliku</p>
+      <section class="section-1 card">
+        <p>console.log(id === 100 ? "Tačno" : "Netačno")</p>
+        <p>-> Tačno</p>
+      </section>
+    </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

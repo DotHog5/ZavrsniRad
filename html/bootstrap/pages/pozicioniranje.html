@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Pozicioniranje</h1>
+       <p>Sledeće klase postoje za jednostavno pozicioniranje, ali one NISU responsivne</p>
+       <br>
+
+       <section class="section-1 card">
+          <p><span><</span>div class="position-static"<span>></span>Primer teksta<span><</span>/div<span>></span></p>
+          <p>/*Ovo je početna, odnosno defaultna vrednost za svaki element*/</p>
+          <p><span><</span>div class="position-relative"<span>></span>Primer teksta<span><</span>/div<span>></span></p>
+          <p>/*Znači da će zauzeti poziciju u odnosu na njenu normalnu pozicju*/</p>
+          <p><span><</span>div class="position-absolute"<span>></span>Primer teksta<span><</span>/div<span>></span></p>
+          <p>/*Pozicioniranje u odnosu na roditeljski element*/</p>
+          <p><span><</span>div class="position-fixed"<span>></span>Primer teksta<span><</span>/div<span>></span></p>
+          <p>/*Relativno u odnosu na prozor veb pretraživača*/</p>
+          <p><span><</span>div class="position-sticky"<span>></span>Primer teksta<span><</span>/div<span>></span></p>
+          <p>/*Sticky se pozicionira u odnosu na skrol, menja se između reltaivnog i fiksiranog.*/</p>
+       </section>
+       <br>
+      <h3>Fixed Top</h3>
+      <h3 class="fixed-top">Fixed Top</h3>
+      <section class="section-1 card">
+         <p> <span><</span>h3 class="fixed-top"<span>></span>Fixed Top<span><</span>/h3<span>></span> </p>
+         <p>/*U krajnjem gornjem levom uglu može se videti Fixed Top naslov, odatle počinje istoimena klasa*/</p>
+      </section>
+      <br>
+      <h3>Fixed Bottom</h3>
+      <h3 class="fixed-bottom">Fixed Bottom</h3>
+      <section class="section-1 card">
+         <p> <span><</span>h3 class="fixed-Bottom"<span>></span>Fixed Bottom<span><</span>/h3<span>></span> </p>
+         <p>/*U krajnjem donjem levom uglu može se videti Fixed Bottom naslov*/</p>
+      </section>
+      <br>
+      <h3 class="sticky-top">Sticky-top</h3>
+      <section class="section-1 card">
+        <p><span><</span>h3 class="sticky-top"<span>></span>Sticky-top<span><</span>/h3<span>></span></p>
+      </section>
+      <br>
+      <p class="section-3">Da bi demonstrirali sticky-top moramo prethodno dodatni teksta(proizvoljnog), da bi nam bila jasnija ta funkcija.
+        <br>
+        <b>Napomena: skrolujte na dole!</b>
+      </p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quas! Repudiandae perspiciatis numquam similique laborum quidem nihil fugit doloribus laudantium reiciendis a sit, maxime vel quia ut tempora ab tenetur minus aperiam velit aut quibusdam cupiditate sapiente alias! Excepturi alias neque minima adipisci eum optio, iste vero nesciunt aspernatur quam ab eligendi ducimus quisquam delectus ullam ea ipsam aliquid saepe sint dolore suscipit! Earum velit laborum alias hic, perferendis eveniet harum cupiditate possimus totam ducimus numquam sequi porro quis consequatur modi corrupti blanditiis, tempora facilis inventore saepe beatae? Quia culpa, non fuga repellat assumenda consequatur itaque provident fugit perspiciatis ipsa veniam quos odio eum quidem, enim, accusantium magni animi. Dolorem doloremque vel non itaque hic eius quas temporibus maxime odit? Saepe voluptates, accusantium quas aliquid dolore illum quibusdam, consequatur iste accusamus distinctio, harum nesciunt incidunt fuga animi ut aperiam consectetur quaerat? Libero sed in vel sequi reiciendis? Maxime minima animi omnis adipisci laborum culpa assumenda, quam recusandae sequi temporibus explicabo perferendis nobis repellendus, exercitationem beatae a officia doloribus totam maiores illum tenetur! Earum adipisci maiores quis dolore assumenda corporis quae molestias obcaecati repellat rem! Nobis incidunt neque maiores quo, rem praesentium amet illo architecto ad fugiat sit molestias, esse id, repudiandae non reiciendis tempora. Quia debitis vel id tenetur autem nihil architecto eos saepe, beatae repellat vero aliquid, dolorem earum, animi optio blanditiis non consequuntur. Perspiciatis sequi suscipit dolore amet aliquam, facilis sed delectus. Maxime exercitationem pariatur consequuntur autem sequi rem in. Harum repudiandae, itaque mollitia aut consectetur facilis minus facere animi dolor voluptas doloribus accusamus omnis ducimus quibusdam nemo sequi veritatis dignissimos officia corrupti cum voluptates, ea cumque laborum! Praesentium nisi optio ipsum iure a suscipit nesciunt perferendis deleniti officiis, vitae aperiam cumque cum quibusdam accusamus quo. Deserunt dolore soluta doloremque consectetur dignissimos, praesentium illo illum voluptatem tenetur fuga necessitatibus unde provident. Laboriosam assumenda, itaque voluptate eius nemo dolor saepe molestias deleniti repellendus voluptatem dolorum soluta aperiam earum ipsam quaerat libero ut sequi animi qui deserunt possimus veniam architecto ipsum. Maxime corporis laboriosam, culpa earum mollitia repellendus, neque labore et architecto necessitatibus est nam ratione corrupti dolor repudiandae illum odio? Atque accusamus quibusdam obcaecati laudantium cum nobis ea magni odit, iure ab eius cupiditate quos minima ipsam maxime corporis doloribus, sequi sapiente. Sit hic doloremque magnam, ea ipsum consequatur placeat tenetur! Vero omnis voluptate, sed earum tempore quaerat quis error! Quae quasi deserunt dolor veritatis fuga voluptatum illo esse quibusdam. Dolores, dignissimos debitis nemo iusto temporibus porro incidunt enim sequi natus voluptas impedit deserunt itaque, illo quo sint ratione? Libero possimus quos a necessitatibus qui autem? Autem perferendis excepturi esse dolorem impedit iure placeat similique, cum atque dolor perspiciatis magnam ut rerum, amet nostrum dignissimos rem illum assumenda, molestiae exercitationem harum temporibus quos praesentium corporis. Autem vitae id nisi veritatis delectus explicabo reprehenderit ipsam ad placeat esse possimus fugiat voluptatibus magnam illo, error ipsum sunt expedita eligendi culpa! Unde illum ipsam tenetur accusamus magni provident reiciendis repellat autem. Aspernatur maiores nam nostrum alias necessitatibus quasi temporibus exercitationem natus, nemo facere molestiae accusantium sequi at mollitia atque animi! Quas explicabo ab ex aliquam suscipit alias mollitia, tenetur, temporibus, at cupiditate non. Voluptatibus quas quam dolores magni qui voluptatum deserunt assumenda doloribus sed sint iure recusandae repudiandae porro, facere molestias consequatur? Ab veritatis culpa sint nam eligendi laborum animi autem obcaecati earum! Sunt suscipit id temporibus aliquid consequuntur ipsa officiis culpa nemo! Cumque ex cum deleniti nulla voluptatibus sequi debitis quis sed soluta molestias reprehenderit necessitatibus consequatur eveniet, hic ad quae est voluptate labore maxime ducimus laudantium rem corporis. Magnam quis rerum, tempora error sequi voluptatum eius quod voluptatem ullam nihil ex, placeat nostrum possimus at dicta consequuntur est? Corporis accusamus nemo inventore doloremque facere ex, voluptas quisquam sequi itaque alias voluptatibus est ad, sint sapiente aperiam quaerat, molestias laudantium ab nostrum quo doloribus nobis! Voluptatibus aperiam temporibus veniam in dolore, minus inventore nihil veritatis vitae. Aspernatur fuga cum quia debitis ex iusto, assumenda numquam dicta labore qui repellat enim ipsam unde repudiandae tenetur fugiat tempora aliquam accusamus accusantium magnam modi! At voluptate corporis repellendus earum ipsum adipisci non suscipit, quas nam iusto. Optio unde iure veritatis culpa assumenda. Amet eum suscipit magni facere, eveniet aliquam vel quaerat inventore tempore vero est deleniti error. Voluptatum, nulla perferendis? Nisi sunt illo hic dolor labore eveniet similique consectetur ipsum ex consequuntur. Vitae perspiciatis earum ipsum expedita libero suscipit necessitatibus quod nisi, repellendus, magnam error ratione nostrum dolorem architecto perferendis laudantium quam atque cupiditate laboriosam fuga veritatis. Odio nemo odit ad aspernatur ex doloremque eligendi hic id repellat, cum saepe atque tempore. Vitae, labore qui placeat voluptas corrupti aliquid suscipit minima cumque aliquam amet non pariatur dolore corporis! Dolorem reprehenderit quaerat neque nam aperiam? Tempore sit veniam recusandae illo. Consequuntur debitis vitae dignissimos quasi, voluptatibus nemo tempore ducimus eaque nihil pariatur, facere atque, delectus doloremque cum. Cum aspernatur sit impedit dolor nihil quae ipsam provident delectus quibusdam praesentium, quaerat ex porro libero laboriosam ad, veniam accusamus repellendus nisi ipsa perferendis similique temporibus? Aperiam dolore odit totam error esse autem? Officiis laboriosam deleniti autem, in reprehenderit animi vero exercitationem odit voluptas esse perferendis excepturi ipsa accusantium sint, quaerat voluptatibus labore illum. Rem iure omnis, aspernatur, voluptatibus nulla saepe reiciendis delectus ad at, tenetur quibusdam natus error aliquid suscipit quis culpa sunt sequi ullam veritatis. Recusandae, dignissimos! Eos dolor, doloremque, quod error accusamus iusto vel optio debitis ducimus harum qui quas dicta ullam provident impedit assumenda non placeat, ab voluptatibus esse! Voluptatum aut quidem repudiandae, velit tenetur alias, amet nobis fugit aspernatur ullam recusandae quo natus ea, quibusdam minus culpa corporis nihil enim. Molestiae tenetur libero, ullam modi qui quibusdam dolorem placeat veritatis illum labore, vitae rem dignissimos nulla voluptates ipsam inventore ducimus atque expedita temporibus earum eos. Dicta fuga, ex nemo nesciunt quae assumenda error voluptatem placeat a, nostrum corporis recusandae accusantium, sapiente quo explicabo! Fugit voluptatem nemo dignissimos temporibus enim, eum sapiente laborum. Neque, a. Sint velit, tempora maiores sed animi cupiditate odio, accusantium inventore deserunt dolor ipsa aliquid perferendis consequatur itaque eum exercitationem?</p>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

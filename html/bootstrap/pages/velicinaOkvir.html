@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Veličina i border</h1>
+       <h3>Width</h3>
+       <p>Promena širine nekog elementa se lako može izvršiti, loša strana ovog je što postoje samo 5 vrednosti za promenu širine, tako da je preporuka da se koristi čist css, ali ako vam trebaju neke od ovih vrednosti iskoristite ih.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div class="bg-success p-3 w-25"<span>></span>Width 25%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-success p-3 w-50"<span>></span>Width 50%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-success p-3 w-75"<span>></span>Width 75%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-success p-3 w-100"<span>></span>Width 100%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-success p-3 w-auto"<span>></span>Width Auto<span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="bg-success p-3 w-25">Width 25%</div>
+        <div class="bg-success p-3 w-50">Width 50%</div>
+        <div class="bg-success p-3 w-75">Width 75%</div>
+        <div class="bg-success p-3 w-100">Width 100%</div>
+        <div class="bg-success p-3 w-auto">Width Auto</div>
+        <br>
+        <h3>Height</h3>
+        <p>Kao i kod promena vrednosti širine, tako i ovde, kod visine, postoje samo 5 vrednosti koje imamo na raspolaganju.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div style="height:300px;border: 1px solid #333"<span>>
+         <p> <span><</span>div class="bg-primary d-inline-block h-25"<span>></span>Height 25%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-primary d-inline-block h-50"<span>></span>Height 50%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-primary d-inline-block h-75"<span>></span>Height 75%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-primary d-inline-block h-100"<span>></span>Height 100%<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="bg-primary d-inline-block h-auto"<span>></span>Height Auto<span><</span>/div<span>></span></p>
+         <p><span><</span>/div<span>></span> </p>
+        </section>
+        <br>
+        <div style="height:300px;border: 1px solid #333">
+          <div class="bg-primary d-inline-block h-25">Height 25%</div>
+          <div class="bg-primary d-inline-block h-50">Height 50%</div>
+          <div class="bg-primary d-inline-block h-75">Height 75%</div>
+          <div class="bg-primary d-inline-block h-100">Height 100%</div>
+          <div class="bg-primary d-inline-block h-auto">Height Auto</div>
+        </div>
+        <br>
+        <h3>Border</h3>
+        <p>Border predstavlja ivičnu liniju HTML elementa. Njega koristimo uglavnom kad želimo posebno da kažemo nešto, izdvojimo i sl. Takođe se koristi za ulepšavanje samе stranice.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-dark"<span>></span> Regular<span><</span>/div<span>></span> </p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-top border-dark"<span>></span> Border Top<span><</span>/div<span>></span> </p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-bottom border-dark"<span>></span> Border Bottom<span><</span>/div<span>></span> </p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-right border-dark"<span>></span> Border Right<span><</span>/div<span>></span> </p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-left border-dark"<span>></span> Border Left<span><</span>/div<span>></span> </p>
+        </section>
+        <br>
+        <div class="p-3 mb-2 bg-light border border-dark">Regular</div>
+        <div class="p-3 mb-2 bg-light border-top border-dark">Border Top</div>
+        <div class="p-3 mb-2 bg-light border-bottom border-dark">Border Bottom</div>
+        <div class="p-3 mb-2 bg-light border-right border-dark">Border Right</div>
+        <div class="p-3 mb-2 bg-light border-left border-dark">Border Left</div>
+        <br>
+        <h3>Boje</h3>
+        <p>Kao što se može zaključiti i iz prethodnog primera i border ima svoje boje, koje su iste kao i pozadinske boje, odnosno:</p>
+        <br>
+        <section class="section-1 card">
+          <p> <span><</span>div class="p-3 mb-2 bg-light border border-primary"<span>></span>Primary<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-secondary"<span>></span>Secondary<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-success"<span>></span>Success<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-info"<span>></span>Info<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-warning"<span>></span>Warning<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-danger"<span>></span>Danger<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-light"<span>></span>Light<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-dark"<span>></span>Dark<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border border-white"<span>></span>White<span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="p-3 mb-2 bg-white border border-primary">Primary</div>
+        <div class="p-3 mb-2 bg-white border border-secondary">Secondary</div>
+        <div class="p-3 mb-2 bg-white border border-success">Success</div>
+        <div class="p-3 mb-2 bg-white border border-info">Info</div>
+        <div class="p-3 mb-2 bg-white border border-warning">Warning</div>
+        <div class="p-3 mb-2 bg-white border border-danger">Danger</div>
+        <div class="p-3 mb-2 bg-white border border-light">Light</div>
+        <div class="p-3 mb-2 bg-white border border-dark">Dark</div>
+        <div class="p-3 mb-2 bg-white border border-white">White</div>
+        <br>
+        <h3>Border Radius</h3>
+        <p>Predstavlja zaobljenje ivica bordera, koristi se da bi se ulepšali borderi.</p>
+        <br>
+        <section class="section-1 card">
+         <p> <span><</span>div class="p-3 mb-2 bg-light border rounded border-info"<span>></span>Rounded<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-top rounded border-success"<span>></span>Rounded Top<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-bottom rounded"<span>></span>Rounded Bottom<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-right rounded"<span>></span>Rounded Right<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light border-left rounded"<span>></span>Rounded Left<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light w-25 rounded-circle text-center"<span>></span>Rounded Circle<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="p-3 mb-2 bg-light rounded-circle"<span>></span>Dark<span><</span>/div<span>></span></p>
+        </section>
+        <br>
+          <div class="p-3 mb-2 bg-light border rounded border-dark">Rounded</div>
+          <div class="p-3 mb-2 bg-light border-top rounded border-dark">Rounded Top</div>
+          <div class="p-3 mb-2 bg-light border-bottom rounded border-dark">Rounded Bottom</div>
+          <div class="p-3 mb-2 bg-light border-right rounded border-dark">Rounded Right</div>
+          <div class="p-3 mb-2 bg-light border-left rounded border-dark">Rounded Left</div>
+          <div class="p-3 mb-2 bg-light w-25 rounded-circle text-center border-dark">Rounded Circle</div>
+        <div class="p-3 mb-2 bg-light rounded-circle">Dark</div>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

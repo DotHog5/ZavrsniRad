@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Cards</h1>
+       <p>Card je fleksibilan i proširiv kontejner sadržaja. Sadrži opcije zaglavlja i podnožja, širok izbor sadržaja, kontekstualne boje pozadine i moćne opcije prikaza. </p>
+       <br>
+        <section class="section-1 card">
+          <p>  <span><</span>div class="card w-25"<span>></span></p>
+               <p> <span><</span>img src="../../../img/anita-austvika-gEN-3m386O4-unsplash.jpg" class="card-img-top"<span>></span></p>
+               <p> <span><</span>div class="card-body"<span>></span></p>
+                <p>  <span><</span>h5 class="card-title"<span>></span>Naslov<span><</span>/h5<span>></span></p>
+                <p>  <span><</span>p class="card-text"<span>></span>Primer kartice sa naslovom i slikom<span><</span>/p<span>></span></p>
+                <p>  <span><</span>a href="#" class="btn btn-primary mt-2<span>></span>>Klikni<span><</span>/a<span>></span></p>
+               <p> <span><</span>/div<span>></span></p>
+             <p> <span><</span>/div<span>></span></p>
+        </section>
+       <br>
+       <div class="card w-25">
+          <img src="../../../img/anita-austvika-gEN-3m386O4-unsplash.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Primer kartice sa naslovom i slikom</p>
+            <a href="#" class="btn btn-primary mt-2">Klikni</a>
+          </div>
+        </div>
+        <br>
+        <p>Svaka kartica ima roditeljsku klasu card, takođe može da ima sliku(uglavnom ima), naslov, tekst, button...</p>
+        <br>
+        <p>Primer kartice bez slike i sa podnaslovom i dva linka umesto buttona</p>
+        <br>
+        <section class="section-1 card">
+           <p><span><</span>div class="card" style="width: 18rem;"<span>></span></p>
+               <p> <span><</span>div class="card-body"<span>></span></p>
+               <p>   <span><</span>h5 class="card-title"<span>></span>Naslov<span><</span>/h5<span>></span></p>
+               <p>   <span><</span>h6 class="card-subtitle mb-2 text-muted"<span>></span>Podnaslov<span><</span>/h6<span>></span></p>
+               <p>   <span><</span>p class="card-text"<span>></span>Primer kartice sa naslovom, podnaslovom i slikom<span><</span>/p<span>></span></p>
+               <p>   <span><</span>a href="#" class="card-link"<span>></span>Link<span><</span>/a<span>></span></p>
+               <p>   <span><</span>a href="#" class="card-link"<span>></span>Još jedan link<span><</span>/a<span>></span></p>
+               <p> <span><</span>/div<span>></span></p>
+            <p>  <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Podnaslov</h6>
+              <p class="card-text">Primer kartice sa naslovom, podnaslovom i slikom</p>
+              <a href="#" class="card-link">Link</a>
+              <a href="#" class="card-link">Još jedan link</a>
+            </div>
+          </div>
+          <br>
+        <h3>Grupisane liste</h3>
+        <p>Grupisane liste mogu postojati sa i bez naslova.</p>
+        <br>
+        <section class="section-1 card">
+           <p> <span><</span>div class="card" style="width: 18rem;"<span>></span></p>
+                <p><span><</span>div class="card-header"<span>></span>
+                  Naslov
+                <span><</span>/div<span>></span></p>
+                <p><span><</span>ul class="list-group list-group-flush"<span>></span></p>
+                 <p> <span><</span>li class="list-group-item"<span>></span>Primer Teksta<span><</span>/li<span>></span></p>
+                 <p> <span><</span>li class="list-group-item"<span>></span>Primer Teksta<span><</span>/li<span>></span></p>
+                 <p> <span><</span>li class="list-group-item"<span>></span>Primer Teksta<span><</span>/li<span>></span></p>
+                <p><span><</span>/ul<span>></span></p>
+              <p><span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              Naslov
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Primer Teksta</li>
+              <li class="list-group-item">Primer Teksta</li>
+              <li class="list-group-item">Primer Teksta</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+
+        <h3>Pozadina i boja</h3>
+        <section class="section-1 card">
+           <p> <span><</span>div class="card text-white bg-primary mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Primary boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-secondary mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Secondary boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-success mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Success boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-danger mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Danger boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-warning mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Warning boja<span><</span>/h5<span>></span>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-info mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Info boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card bg-light mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Light boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="card text-white bg-dark mb-3" style="max-width: 18rem;"<span>></span></p>
+           <p>     <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+           <p>     <span><</span>div class="card-body"<span>></span></p>
+           <p>       <span><</span>h5 class="card-title"<span>></span>Dark boja<span><</span>/h5<span>></span></p>
+           <p>       <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+           <p>     <span><</span>/div<span>></span></p>
+           <p>   <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Primary boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Secondary boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Success boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Danger boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Warning boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Info boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Light boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Naslov</div>
+              <div class="card-body">
+                <h5 class="card-title">Dark boja</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+              </div>
+            </div>
+          
+            <br>
+          <h3>Border</h3>
+            <section class="section-1 card">
+               <p> <span><</span>div class="card border-primary mb-3" style="max-width: 18rem;"<span>></span></p>
+                 <p>   <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                 <p>   <span><</span>div class="card-body text-primary"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Primary boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                 <p> <span><</span>div class="card border-secondary mb-3" style="max-width: 18rem;"<span>></span></p>
+                 <p>   <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                 <p>   <span><</span>div class="card-body text-secondary"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Secondary boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                <p>    <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                 <p> <span><</span>div class="card border-success mb-3" style="max-width: 18rem;"<span>></span></p>
+                <p>    <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                <p>    <span><</span>div class="card-body text-success"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Success boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                 <p> <span><</span>div class="card border-danger mb-3" style="max-width: 18rem;"<span>></span></p>
+                 <p>   <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                 <p>   <span><</span>div class="card-body text-danger"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Danger boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                <p>  <span><</span>div class="card border-warning mb-3" style="max-width: 18rem;"<span>></span></p>
+                    <span><</span>div class="card-header">Naslov<span><</span>/div<span>></span></p>
+                <p>    <span><</span>div class="card-body text-warning"<span>></span></p>
+                <p>      <span><</span>h5 class="card-title"<span>></span>Warning boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                 <p> <span><</span>div class="card border-info mb-3" style="max-width: 18rem;"<span>></span></p>
+                 <p>   <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                 <p>   <span><</span>div class="card-body text-info"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Info boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                <p>  <span><</span>div class="card border-light mb-3" style="max-width: 18rem;"<span>></span></p>
+                <p>    <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                 <p>   <span><</span>div class="card-body"<span>></span></p>
+                 <p>     <span><</span>h5 class="card-title"<span>></span>Light boja<span><</span>/h5<span>></span></p>
+                 <p>     <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                 <p>   <span><</span>/div<span>></span></p>
+                 <p> <span><</span>/div<span>></span></p>
+                 <p> <span><</span>div class="card border-dark mb-3" style="max-width: 18rem;"<span>></span></p>
+                  <p>  <span><</span>div class="card-header"<span>></span>Naslov<span><</span>/div<span>></span></p>
+                  <p>  <span><</span>div class="card-body text-dark"<span>></span></p>
+                   <p>   <span><</span>h5 class="card-title"<span>></span>Dark boja<span><</span>/h5<span>></span></p>
+                   <p>   <span><</span>p class="card-text"<span>></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?<span><</span>/p<span>></span></p>
+                  <p>  <span><</span>/div<span>></span></p>
+                  <p><span><</span>/div<span>></span></p>
+            </section>
+          <br>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-primary">
+                  <h5 class="card-title">Primary boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-secondary">
+                  <h5 class="card-title">Secondary boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-success">
+                  <h5 class="card-title">Success boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-danger">
+                  <h5 class="card-title">Danger boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-warning">
+                  <h5 class="card-title">Warning boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-info">
+                  <h5 class="card-title">Info boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+              <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Naslov</div>
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Dark boja</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatem?</p>
+                </div>
+              </div>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

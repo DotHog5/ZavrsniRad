@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a>
+          </li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>Uklanjanje i zamenjivanje elemenata</h1>
+        <h3>Zamenjivanje elemenata</h3>
+        <br>
+        <p>Za početak ćemo prvo napraviti novi element i apendovati ga.</p>
+        <br>
+        <section class="section-1 card">
+            <p><span><</span>div class="parent-class"<span>></span></p>
+               <p> <span><</span>h2 class="text-title" id="title"<span>></span>Pozdrav<span><</span>/h2<span>></span></p>
+              <p><span><</span>/div<span>></span></p>
+              <p><span><</span>script<span>></span></p>
+                <p> const noviNaslov = document.createElement('h2')</p>
+
+                <p> noviNaslov.id = 'title'</p>
+
+                <p> noviNaslov.appendChild(document.createTextNode('Naslov'))</p>
+              <p><span><</span>/script<span>></span></p>
+        </section>
+        <br>
+        <p>Zatim pomoću selektora pristupamo elementu koji hoćemo da promenimo i njegovom parentu.</p>
+        <br>
+        <section class="section-1 card">
+          
+         <p> const stariNaslov = document.getElementById('title') </p>
+
+         <p> const parent = document.querySelector('.parent-class') </p>
+        </section>
+        <br>
+        <section class="section-1 card">
+            parent.replaceChild(noviNaslov, stariNaslov)
+            <div class="parent-class">
+                <h2 class="text-title" id="title">Pozdrav</h2>  
+            </div>
+        </section>
+        <br>
+        <h3>Uklanjanje elemenata</h3>
+        <br>
+        <p>Kod uklanjanja moramo prvo selektovati željene elemente pomoću selektora i brišemo ih tako što zapravo uklanjamo elemente kolekcije.</p>
+        <br>
+        <section class="section-1 card">
+             <p> <span><</span>ul<span>></span></p>
+               <p> <span><</span>li<span>></span>1. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>2. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>3. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>4. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>5. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>6. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>7. Primer<span><</span>/li<span>></span></p>
+               <p> <span><</span>li<span>></span>8. Primer<span><</span>/li<span>></span></p>
+             <p> <span><</span>/ul<span>></span></p>
+             <p> <span><</span>script<span>></span></p>
+               <p> const li = document.querySelectorAll('li')</p>
+               <p> const list = document.querySelector('ul')</p>
+             <p> <span><</span>/script></p>
+        </section>
+        <br>
+        <p>Potom sledi i uklanjanje elemenata</p>
+        <br>
+        <section class="section-1 card">
+          <p> li[0].remove()</p>
+          <p>/*Ukloniće element sa indexom 0, odnosno prvi element*/</p>
+          <p> list.removeChild(li[3])</p>
+          <p>/*Uklanja child element sa indexom 3, odnosno četvrti element*/</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+       const noviNaslov = document.createElement('h2')
+        noviNaslov.id = 'title'
+        noviNaslov.appendChild(document.createTextNode('Naslov'))
+        const stariNaslov = document.getElementById('title')
+        const parent = document.querySelector('.parent-class')
+        parent.replaceChild(noviNaslov, stariNaslov) 
+
+    </script>
+  </body>
+</html>

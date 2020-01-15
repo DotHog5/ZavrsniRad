@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Liste </h1>
+       <p>Liste se koriste da bi se izlitao bilo koji sadržaj u njima. U prvom primeru će biti prikazana najednostavniji tip liste.</p>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>ul class="list-group"<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Jedan<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Dva<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Tri<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Četiri<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Pet<span><</span>/li<span>></span></p>
+        <p><span><</span>/ul<span>></span></p>
+       </section>
+       <br>
+       <ul class="list-group">
+        <li class="list-group-item">Primer Liste Jedan</li>
+        <li class="list-group-item">Primer Liste Dva</li>
+        <li class="list-group-item">Primer Liste Tri</li>
+        <li class="list-group-item">Primer Liste Četiri</li>
+        <li class="list-group-item">Primer Liste Pet</li>
+      </ul>
+      <br>
+      <p class="section-3">Isti ovaj primer je moguće uraditi i sa <b>a</b> (link) tagovima</p>
+      <br>
+      <h3>Kontekstualne liste</h3>
+      <p>Slična funkcija običnim listama, uz razliku što su tekst i pozadina u drugačijim bojama</p>
+      <br>
+      <section class="section-1 card">
+       <p> <span><</span>ul class="list-group"<span>></span></p>
+         <p> <span><</span>li class="list-group-item"<span>></span>Regular List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-primary"<span>></span>Primary List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-secondary"<span>></span>Secondary List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-success"<span>></span>Success List Item<span><</span>/li<span>></span></p>
+         <p> <span><</span>li class="list-group-item list-group-item-info"<span>></span>Info List Item<span><</span>/li<span>></span></p>
+         <p><span><</span>li class="list-group-item list-group-item-warning"<span>></span>Warning List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-danger"<span>></span>Danger List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-light"<span>></span>Light List Item<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item list-group-item-dark"<span>></span>Dark List Item<span><</span>/li<span>></span></p>
+        <p><span><</span>/ul<span>></span></p>
+      </section>
+      <br>
+      <ul class="list-group">
+        <li class="list-group-item">Regular List Item</li>
+        <li class="list-group-item list-group-item-primary">Primary List Item</li>
+        <li class="list-group-item list-group-item-secondary">Secondary List Item</li>
+        <li class="list-group-item list-group-item-success">Success List Item</li>
+        <li class="list-group-item list-group-item-info">Info List Item</li>
+        <li class="list-group-item list-group-item-warning">Warning List Item</li>
+        <li class="list-group-item list-group-item-danger">Danger List Item</li>
+        <li class="list-group-item list-group-item-light">Light List Item</li>
+        <li class="list-group-item list-group-item-dark">Dark List Item</li>
+      </ul>
+      <br>
+      <h3>Flush List Group</h3>
+      <p>Ako želimo da nam lista izgleda jednostavnije koristićemo flush</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>ul class="list-group list-group-flush"<span>></span></p>
+         <p> <span><</span>li class="list-group-item"<span>></span>Primer Liste Jedan<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Dva<span><</span>/li<span>></span></p>
+         <p> <span><</span>li class="list-group-item"<span>></span>Primer Liste Tri<span><</span>/li<span>></span></p>
+         <p> <span><</span>li class="list-group-item"<span>></span>Primer Liste Četiri<span><</span>/li<span>></span></p>
+         <p> <span><</span>li class="list-group-item"<span>></span>Primer Liste Pet<span><</span>/li<span>></span></p>
+        <p><span><</span>/ul<span>></span></p>
+      </section>
+      <br>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Primer Liste Jedan</li>
+        <li class="list-group-item">Primer Liste Dva</li>
+        <li class="list-group-item">Primer Liste Tri</li>
+        <li class="list-group-item">Primer Liste Četiri</li>
+        <li class="list-group-item">Primer Liste Pet</li>
+      </ul>
+      <br>
+      <h3>Badges</h3>
+      <p>Sa bedževima možemo da dodamo npr. aktivnosti, nepročitane poruke i sl.</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>ul class="list-group mb-5"<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Jedan<span><</span>/li<span>></span></p>
+         <p> <span><</span>li class="list-group-item d-flex justify-content-between align-items-center"<span>></span>Primer Liste Dva
+            <span><</span>span class="badge badge-info"<span>></span>33<span><</span>/span<span>></span><span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Tri<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Četiri<span><</span>/li<span>></span></p>
+          <p><span><</span>li class="list-group-item"<span>></span>Primer Liste Pet<span><</span>/li<span>></span></p>
+       <p> <span><</span>/ul></p>
+      </section>
+      <br>
+      <ul class="list-group mb-5">
+        <li class="list-group-item">Primer Liste Jedan</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Primer Liste Dva
+          <span class="badge badge-info">33</span>
+        </li>
+        <li class="list-group-item">Primer Liste Tri</li>
+        <li class="list-group-item">Primer Liste Četiri</li>
+        <li class="list-group-item">Primer Liste Pet</li>
+      </ul>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Grid</h1>
+       <p>Grid sistem Bootstrapa koristi niz kontejnera i klasa za izgled i poravnavanje sadržaja. Napravljen je sa flexboxom i u potpunosti je responsivan.</p>
+       <p>To je sistem sačinjen od 12 kolona, pomoću kojih možemo da vrlo lako raspolažemo veličinom diva.</p>
+       <p>Roditeljski element ima klasu row, a child elementi col- + sm(small)/md(medium)/lg(large)/xl(extra large) + broj od 1 do 12 u zavisnosti koji broj kolona želimo da zauzmemo.</p>
+       <p>sm -> prikaz na malim ekranima(>= 540px)</p>
+       <p>md -> prikaz na malim ekranima(>= 720px)</p>
+       <p>lg -> prikaz na malim ekranima(>= 960px)</p>
+       <p>xl -> prikaz na malim ekranima(>= 1140px)</p>
+       <p>Postoji i xs veličina, za mobilne uređaje, ali obzirom da svi rade mobile first dizajn ne koristi se toliko često.</p>
+       <br>
+       <section class="section-1 card">
+       <p> <span><</span>div class="row"<span>></span></p>
+          <p><span><</span>div class="col-sm-6 col-md-8 col-lg-9 col-xl-10 border"<span>></span></p>
+            <p><span><</span>ul<span>></span></p>
+              <p><span><</span>li<span>></span>6 column on small screens<span><</span>/li<span>></span></p>
+              <p><span><</span>li<span>></span>8 column on medium screen<span><</span>/li<span>></span></p>
+             <p> <span><</span>li<span>></span>9 column on large screen<span><</span>/li<span>></span></p>
+             <p> <span><</span>li<span>></span>10 column on xlarge screen<span><</span>/li<span>></span></p>
+            <p><span><</span>/ul<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+          <p><span><</span>div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 border"<span>></span></p>
+            <p><span><</span>ul<span>></span></p>
+             <p> <span><</span>li<span>></span>6 column on small screens<span><</span>/li<span>></span></p>
+             <p> <span><</span>li<span>></span>4 column on medium screen<span><</span>/li<span>></span></p>
+              <p><span><</span>li<span>></span>3 column on large screen<span><</span>/li<span>></span></p>
+              <p><span><</span>li<span>></span>2 column on xlarge screen<span><</span>/li<span>></span></p>
+           <p> <span><</span>/ul<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+       </section>
+       <br>
+       <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10 border">
+          <ul>
+            <li>6 column on small screens</li>
+            <li>8 column on medium screen</li>
+            <li>9 column on large screen</li>
+            <li>10 column on xlarge screen</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 border">
+          <ul>
+            <li>6 column on small screens</li>
+            <li>4 column on medium screen</li>
+            <li>3 column on large screen</li>
+            <li>2 column on xlarge screen</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+  
+      <h3>Jednake širine</h3>
+      <section class="section-1 card">
+       <p> <span><</span>div class="row"<span>></span></p>
+        <p>  <span><</span>div class="col border"<span>></span>Jednake širine<span><</span>/div<span>></span></p>
+        <p>  <span><</span>div class="col border"<span>></span>Jednake širine<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col border"<span>></span>Jednake širine<span><</span>/div<span>></span></p>
+        <p>  <span><</span>div class="col border"<span>></span>Jednake širine<span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col border">Jednake širine</div>
+        <div class="col border">Jednake širine</div>
+        <div class="col border">Jednake širine</div>
+        <div class="col border">Jednake širine</div>
+      </div>
+      <br>
+  
+      <p>Elementi će automatski zauzeri kolone.</p>
+      <br>
+      <section class="section-1 card">
+       <p> <span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col border"<span>></span>Grid kolona<span><</span>/div<span>></span></p>
+          <p><span><</span>div class="col-6 border"<span>></span>Grid kolona<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col-4 border"<span>></span>Grid kolona<span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col border">Grid kolona</div>
+        <div class="col-6 border">Grid kolona</div>
+        <div class="col-4 border">Grid kolona</div>
+      </div>
+      <br>
+      
+      <h3>Jednake na određenoj veličini</h3>
+      <section class="section-1 card">
+        <p><span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col-md border"<span>></span>Equal Width Stack<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col-md border"<span>></span>Equal Width Stack<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col-md border"<span>></span>Equal Width Stack<span><</span>/div<span>></span></p>
+        <p><span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col-md border">Equal Width Stack</div>
+        <div class="col-md border">Equal Width Stack</div>
+        <div class="col-md border">Equal Width Stack</div>
+      </div>
+      <br>
+      
+      <h3>Menjanje Rasporeda</h3>
+      <section class="section-1 card">
+       <p> <span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col order-3 border"<span>></span></p>
+            <p>First</p>
+         <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col order-1 border"<span>></span></p>
+           <p> Second</p>
+         <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col order-2 border"<span>></span></p>
+           <p> Third</p>
+         <p> <span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col order-3 border">
+          First
+        </div>
+        <div class="col order-1 border">
+          Second
+        </div>
+        <div class="col order-2 border">
+          Third
+        </div>
+      </div>
+      <br>
+      <h3>Offsetting</h3>
+      <p>Postavljanje kolona i pomeranje za određenu vrednost.</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col-md-6 offset-md-3 border"<span>></span>.col-md-6 .offset-md-3<span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+       <p> <span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col-md-4 border"<span>></span>.col-md-4<span><</span>/div<span>></span></p>
+         <p> <span><</span>div class="col-md-4 offset-md-4 border"<span>></span>.col-md-4 .offset-md-4<span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+    
+       <p> <span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col-md-3 offset-md-3 border"<span>></span>.col-md-3 .offset-md-3<span><</span>/div<span>></span></p>
+          <p><span><</span>div class="col-md-3 offset-md-3 border"<span>></span>.col-md-3 .offset-md-3<span><</span>/div<span>></span></p>
+        <p><span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 border">.col-md-6 .offset-md-3</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 border">.col-md-4</div>
+        <div class="col-md-4 offset-md-4 border">.col-md-4 .offset-md-4</div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-3 offset-md-3 border">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3 border">.col-md-3 .offset-md-3</div>
+      </div>
+      <br>
+      
+      <h3>Nesting</h3>
+      <section class="section-1 card">
+       <p> <span><</span>div class="row"<span>></span></p>
+         <p> <span><</span>div class="col-sm-9 border border-primary"<span>></span></p>
+           <p> Level 1: .col-sm-9</p>
+           <p> <span><</span>div class="row"<span>></span></p>
+           <p>   <span><</span>div class="col-8 col-sm-6 border border-warning"<span>></span></p>
+          <p>      Level 2: .col-8 .col-sm-6</p>
+            <p>  <span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="col-4 col-sm-6 border border-warning"<span>></span></p>
+           <p>     Level 2: .col-4 .col-sm-6</p>
+           <p>   <span><</span>/div<span>></span></p>
+           <p> <span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+       <p> <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="row">
+        <div class="col-sm-9 border border-primary">
+          Level 1: .col-sm-9
+          <div class="row">
+            <div class="col-8 col-sm-6 border border-warning">
+              Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4 col-sm-6 border border-warning">
+              Level 2: .col-4 .col-sm-6
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h3>Poravnanje</h3>
+      <h4>Horizontalno poravnanje</h4>
+      <section class="section-1 card">
+      <p><span><</span>div class="container"<span>></span></p>
+      <p> <span><</span>div class="row align-items-start" style="height:200px;border:1px #333 solid"<span>></span></p>
+      <p>  <span><</span>div class="col"<span>></span></p>
+      <p>    Gornje Poravnanje</p>
+      <p>  <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>   Gornje Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>   Gornje Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>/div<span>></span></p>
+      <p><span><</span>div class="row align-items-center" style="height:200px;border:1px #333 solid"<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>  Centralno Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>  Centralno Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>  Centralno Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="row align-items-end" style="height:200px;border:1px #333 solid"<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>   Donje Poravnanje</p>
+      <p> <span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>   Donje Poravnanje</p>
+      <p><span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="col"<span>></span></p>
+      <p>  Donje Poravnanje</p>
+      <p><span><</span>/div<span>></span></p>
+      <p><span><</span>/div<span>></span></p>
+      <p> <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="container">
+        <div class="row align-items-start" style="height:200px;border:1px #333 solid">
+          <div class="col">
+            Gornje Poravnanje
+          </div>
+          <div class="col">
+            Gornje Poravnanje
+          </div>
+          <div class="col">
+            Gornje Poravnanje
+          </div>
+        </div>
+        <div class="row align-items-center" style="height:200px;border:1px #333 solid">
+          <div class="col">
+           Centralno Poravnanje
+          </div>
+          <div class="col">
+           Centralno Poravnanje
+          </div>
+          <div class="col">
+           Centralno Poravnanje
+          </div>
+        </div>
+        <div class="row align-items-end" style="height:200px;border:1px #333 solid">
+          <div class="col">
+            Donje Poravnanje
+          </div>
+          <div class="col">
+            Donje Poravnanje
+          </div>
+          <div class="col">
+            Donje Poravnanje
+          </div>
+        </div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Vertikalno Poravnanje</h3>
+      <section class="section-1 card">
+        <p><span><</span>div class="container"<span>></span></p>
+          <p><span><</span>div class="row" style="height:200px;border:1px #333 solid"<span>></span></p>
+          <p>  <span><</span>div class="col align-self-top"<span>></span></p>
+          <p>    Gornje Poravnanje</p>
+          <p>  <span><</span>/div<span>></span></p>
+          <p>  <span><</span>div class="col align-self-center"<span>></span></p>
+          <p>    Centralno Poravnanje</p>
+          <p>  <span><</span>/div<span>></span></p>
+          <p>  <span><</span>div class="col align-self-end"<span>></span></p>
+          <p>    Donje Poravnanje</p>
+          <p>  <span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+        <p><span><</span>/div<span>></span></p>
+      </section><br>
+      <div class="container">
+        <div class="row" style="height:200px;border:1px #333 solid">
+          <div class="col align-self-top">
+            Gornje Poravnanje
+          </div>
+          <div class="col align-self-center">
+            Centralno Poravnanje
+          </div>
+          <div class="col align-self-end">
+            Bottom Aligned
+          </div>
+        </div>
+      </div>
+  
+      <br>
+      <br>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+      let pozdrav = "Хвала на пажњи";
+
+      console.log(pozdrav);
+
+    console.log('Hello World!')</script>
+  </body>
+</html>

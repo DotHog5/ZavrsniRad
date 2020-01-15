@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Medijski Objekti</h1>
+       <p>U ovoj oblasti će biti objašnjeno kako da medijske objekte(slike, video snimke...) postavimo na stranicu sa tekstom.</p>
+       <br>
+       <section class="section-1 card">
+         <p><span><</span>div class="media border"<span>></span></p>
+          <p><span><</span>img src="../../../img/anita-austvika-gEN-3m386O4-unsplash.jpg"<span>></span></p>
+          <p><span><</span>div class="ml-3"<span>></span></p>
+           <p> <span><</span>h5<span>></span>Media heading<span><</span>/h5<span>></span></p>
+           <p><span><</span>p<span>></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+              vestibulum in
+              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+              felis in faucibus.<span><</span>/p<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+      <p><span><</span>/div<span>></span></p>
+       </section>
+       <br>
+       <div class="media border">
+          <img src="../../../img/anita-austvika-gEN-3m386O4-unsplash.jpg">
+          <div class="ml-3">
+            <h5>Media heading</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+            vestibulum in
+            vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+            felis in faucibus.</p>
+          </div>
+      </div>
+    
+        <br>
+        <br>
+    
+        <h3>Nesting</h3>
+        <section class="section-1 card">
+          <p><span><</span>div class="media border"<span>></span></p>
+            <p><span><</span>img class="mr-3 w-25" src="../../../img/essentialiving-fcfSHSY76V0-unsplash.jpg" alt="Generic placeholder image"<span>></span></p>
+            <p><span><</span>div class="media-body"<span>></span></p>
+              <p><span><</span>h5 class="mt-0">Media heading<span><</span>/h5<span>></span></p>
+              <p><span><</span>p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span><</span>/p<span>></span></p>
+          
+              <p><span><</span>div class="media mt-3"<span>></span></p>
+                <p><span><</span>a class="pr-3" href="#"<span>></span></p>
+                 <p> <span><</span>img src="../../../img/brandon-hoogenboom-1uFYZUEiTDE-unsplash.jpg" alt="Generic placeholder image"<span>></span></p>
+                <p><span><</span>/a<span>></span></p>
+                <p><span><</span>div class="media-body"<span>></span></p>
+                  <p><span><</span>h5 class="mt-0">Media heading<span><</span>/h5<span>></span></p>
+                  <p><span><</span>p class="p-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span><</span>/p<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+             <p> <span><</span>/div<span>></span></p>
+            <p><span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="media border">
+          <img class="mr-3 w-25" src="../../../img/essentialiving-fcfSHSY76V0-unsplash.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        
+            <div class="media mt-3">
+              <a class="pr-3" href="#">
+                <img src="../../../img/brandon-hoogenboom-1uFYZUEiTDE-unsplash.jpg" alt="Generic placeholder image">
+              </a>
+              <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                <p class="p-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <br>
+        <br>
+    
+        <h3>Poravnanje</h3>
+        <p>Slike, video snimci i sl. se mogu poravnati u bootstrapu pomoću flexbox klasa(više o flexboxu u jednoj od narednih lekcija).</p>
+        <br>
+        <h4>Gornje poravnanje</h4>
+        <section class="section-1 card">
+         <p> <span><</span>div class="media border"<span>></span></p>
+           <p> <span><</span>img class="align-self-start mr-3" src="../../../img/folco-9Hh1HIUGI10-unsplash.jpg" alt="Generic placeholder image"<span>></span></p>
+            <p><span><</span>div class="media-body p-5"<span>></span></p>
+             <p> <span><</span>h5 class="mt-0"<span>></span>Gornje Poravnanje<span><</span>/h5<span>></span></p>
+             <p> <span><</span>p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span><</span>/p<span>></span></p>
+             <p> <span><</span>p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span><</span>/p<span>></span></p>
+            <p><span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="media border">
+          <img class="align-self-start mr-3" src="../../../img/folco-9Hh1HIUGI10-unsplash.jpg" alt="Generic placeholder image">
+          <div class="media-body p-5">
+            <h5 class="mt-0">Gornje Poravnanje</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+        <br>
+        <br>
+    
+        <h4>Centralno poravnanje</h4>
+        <section class="section-1 card">
+          <p><span><</span>div class="media border"<span>></span></p>
+            <p><span><</span>img class="align-self-center mr-3 p-3" src="../../../img/johannes-plenio-rXXz5lSvD4k-unsplash.jpg" alt="Generic placeholder image"<span>></span></p>
+           <p> <span><</span>div class="media-body p-5"<span>></span></p>
+              <p><span><</span>h5 class="mt-0"<span>></span>Centralno Poravnanje<span><</span>/h5<span>></span></p>
+             <p> <span><</span>p<span>></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span><</span>/p<span>></span></p>
+              <p><span><</span>p class="mb-0"<span>></span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span><</span>/p<span>></span></p>
+           <p> <span><</span>/div<span>></span></p>
+          <p><span><</span>/div<span>></span></p>
+        </section>
+       <br> 
+        <div class="media border">
+          <img class="align-self-center mr-3 p-3" src="../../../img/johannes-plenio-rXXz5lSvD4k-unsplash.jpg" alt="Generic placeholder image">
+          <div class="media-body p-5">
+            <h5 class="mt-0">Centralno Poravnanje</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <h4>Donje poravnanje</h4>
+        <section class="section-1 card">
+         <p> <span><</span>div class="media border"<span>></span></p>
+           <p> <span><</span>img class="align-self-end mr-3" src="../../../img/marco-tjokro-0jpQ8I2GvoI-unsplash.jpg" alt="Generic placeholder image"<span>></span></p>
+           <p> <span><</span>div class="media-body p-5"<span>></span></p>
+             <p> <span><</span>h5 class="mt-0<span>></span>>Donje Poravnanje<span><</span>/h5<span>></span></p>
+              <p><span><</span>p<span>></span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span><</span>/p<span>></span></p>
+              <p><span><</span>p class="mb-0"<span>></span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span><</span>/p<span>></span></p>
+            <p><span><</span>/div<span>></span></p>
+         <p> <span><</span>/div<span>></span></p>
+        </section>
+        <br>
+        <div class="media border">
+          <img class="align-self-end mr-3" src="../../../img/marco-tjokro-0jpQ8I2GvoI-unsplash.jpg" alt="Generic placeholder image">
+          <div class="media-body p-5">
+            <h5 class="mt-0">Donje Poravnanje</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+        <br>
+        <br>
+    
+        <h3>Medijska Lista</h3>
+        <p>Možemo i poređati sve elemente pomoću ul ili ol, tako da objekti budu bazirani na listi.</p>
+        <section class="section-1 card">
+         <p> <span><</span>ul class="list-unstyled border"<span>></span></p>
+           <p> <span><</span>li class="media"<span>></span></p>
+             <p> <p><span><</span>img class="mr-3 w-50" src="../../../img/nicole-honeywill-KsfaWQZiUvY-unsplash.jpg"<span>></span></p>
+              <p><span><</span>div class="media-body"<span>></span></p>
+                <p><span><</span>h5<span>></span>List based media object<span><</span>/h5<span>></span></p>
+               <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+                vestibulum in
+                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                congue felis in faucibus.</p>
+              <p><span><</span>/div<span>></span></p>
+            <p><span><</span>/li<span>></span></p>
+            <p><span><</span>li class="media my-4"<span>></span></p>
+              <p><span><</span>img class="mr-3 w-50" src="../../../img/oliver-spencer-FDUtPjmLnsk-unsplash.jpg"<span>></span></p>
+              <p><span><</span>div class="media-body"<span>></span></p>
+                <p><span><</span>h5<span>></span>List based media object<span><</span>/h5<span>></span></p>
+               <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+                vestibulum in
+                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                congue felis in faucibus.</p>
+              <p><span><</span>/div<span>></span></p>
+            <p><span><</span>/li<span>></span></p>
+           <p> <span><</span>li class="media"<span>></span></p>
+              <p><span><</span>img class="mr-3 w-25" src="../../../img/photyoe-UQ1-aGTkCpk-unsplash.jpg"<span>></span></p>
+              <p><span><</span>div class="media-body"<span>></span></p>
+                <p><span><</span>h5<span>></span>List based media object<span><</span>/h5<span>></span></p>
+               <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+                vestibulum in
+                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                congue felis in faucibus.</p>
+              <p><span><</span>/div<span>></span></p>
+            <p><span><</span>/li<span>></span></p>
+         <p> <span><</span>/ul<span>></span></p>
+        </section>
+        <br>
+        <ul class="list-unstyled border">
+          <li class="media">
+            <img class="mr-3 w-50" src="../../../img/nicole-honeywill-KsfaWQZiUvY-unsplash.jpg">
+            <div class="media-body">
+              <h5>List based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+              vestibulum in
+              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+              congue felis in faucibus.
+            </div>
+          </li>
+          <li class="media my-4">
+            <img class="mr-3 w-50" src="../../../img/oliver-spencer-FDUtPjmLnsk-unsplash.jpg">
+            <div class="media-body">
+              <h5>List based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+              vestibulum in
+              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+              congue felis in faucibus.
+            </div>
+          </li>
+          <li class="media">
+            <img class="mr-3 w-25" src="../../../img/photyoe-UQ1-aGTkCpk-unsplash.jpg">
+            <div class="media-body">
+              <h5>List based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+              vestibulum in
+              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+              congue felis in faucibus.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

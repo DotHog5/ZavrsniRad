@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Boje</h1>
+       <p>Promena boje teksta, linkova ili pozadine je dosta česta pojava, stoga se u boostrapu mogu promeniti, pomoću klasa, neke od boja(zbog toga što su boje pre definisane, ne sviđaju se svima iste, ili nisu upotrebljive u nekom projetku, naravno one u dokumentaciji o bootstrapu mogu da se promene)</p>
+       <br>
+       <h3>Boje teksta</h3>
+       <section class="section-1 card">
+        <p><span><</span>p class="text-primary"
+        <span>></span>Tekst Primary Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-secondary"
+        <span>></span>Tekst Secondary Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-success"
+        <span>></span>Tekst Success Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-info"
+        <span>></span>Tekst Info Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-warning"
+        <span>></span>Tekst Warning Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-danger"
+        <span>></span>Tekst Danger Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-light bg-dark"
+        <span>></span>Tekst Light Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-dark"
+        <span>></span>Tekst Dark Boja<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-white bg-dark"
+        <span>></span>Tekst White Boja<span><</span>/p<span>></span></p>
+              <p>  <span><</span>p class="text-muted"
+        <span>></span>Tekst Muted<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-black-50"
+        <span>></span>Tekst Black 50<span><</span>/p<span>></span></p>
+               <p> <span><</span>p class="text-white-50 bg-dark"
+        <span>></span>Tekst White 50<span><</span>/p<span>></span></p>
+        <p>/*text-white, text-light i text-white-50 su mora;e biti sa dodatnom pozadinom jer se ne bi videle.*/</p>
+       </section>
+       <br>
+       <p class="section-3">Sve boje koje možete da koristete su date ovde! Sve ove boje možete koristiti i za link (a) tagove</p>
+       <br>
+        <p class="text-primary" >Tekst Primary Boja</p>
+        <p class="text-secondary" >Tekst Secondary Boja</p>
+        <p class="text-success" >Tekst Success Boja</p>
+        <p class="text-info" >Tekst Info Boja</p>
+        <p class="text-warning" >Tekst Warning Boja</p>
+        <p class="text-danger" >Tekst Danger Boja</p>
+        <p class="text-light bg-dark" >Tekst Light Boja</p>
+        <p class="text-dark" >Tekst Dark Boja</p>
+        <p class="text-white bg-dark" >Tekst White Boja</p>
+        <p class="text-muted" >Tekst Muted</p>
+        <p class="text-black-50" >Tekst Black 50</p>
+        <p class="text-white-50 bg-dark" >Tekst White 50</p>
+        <br>
+      <h3>Pozadinske boje</h3>
+      <p>Većinu boja koju možemo za paragrafe da koristimo možemo i kod pozadina, samo što je drugi naziv za klase.</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>div class="bg-primary"<span>></span>Pozadinska Primary Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-secondary"<span>></span>Pozadinska Secondary Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-success"<span>></span>Pozadinska Success Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-info"<span>></span>Pozadinska Info Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-warning"<span>></span>Pozadinska Warning Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-danger"<span>></span>Pozadinska Danger Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-light"<span>></span>Pozadinska Light Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-dark"<span>></span>Pozadinska Dark Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-white"<span>></span>Pozadinska White Boja<span><</span>/div<span>></span></p>
+        <p><span><</span>div class="bg-transparent"<span>></span>Pozadinska Transparent Boja<span><</span>/div<span>></span></p>
+      </section>
+      <br>
+        <div class="bg-primary" >Pozadinska Primary Boja</div>
+        <div class="bg-secondary" >Pozadinska Secondary Boja</div>
+        <div class="bg-success" >Pozadinska Success Boja</div>
+        <div class="bg-info" >Pozadinska Info Boja</div>
+        <div class="bg-warning" >Pozadinska Warning Boja</div>
+        <div class="bg-danger" >Pozadinska Danger Boja</div>
+        <div class="bg-light" >Pozadinska Light Boja</div>
+        <div class="bg-dark" >Pozadinska Dark Boja</div>
+        <div class="bg-white" >Pozadinska White Boja</div>
+        <div class="bg-transparent" >Pozadinska Transparent Boja</div>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

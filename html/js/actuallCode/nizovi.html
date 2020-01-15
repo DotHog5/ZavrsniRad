@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+    <div class="container">
+      <h1>Nizovi</h1>
+      <p>Nizovi čuvaju podatke u redosledu: prvi, drugi, treći... U niz se može smestiti bilo šta, brojevi, karateri, imena, objekti i sl. Svaki element niza ima svoj indeks, prvi element ima indeks 0, drugi 1 itd.
+      </p>
+      <br>
+      <h3>Deklaracija</h3>
+      <p>Postoje dva načina da se deklariše niz:</p>
+      <br>
+      <section class="card section-1">
+          <p>let arr = new Array()</p>
+          <p>let arr = []</p>
+      </section>
+      <br>
+      <p>Skoro pa uvek se upotrebljuje drugi način.</p>
+      <p>Kao što smo rekli u niz može bilo šta da se postavi.</p>
+      <br>
+      <section class="card section-1">
+          <p>const brojevi = [33, 1, 11, 25, 44, 23, 17]</p>
+          <p>/*Brojevi*/</p>
+          <p>const string = ["Pera", "Jabuka", "Zgrada", "Teren"]</p>
+          <p>/*Stringovi*/</p>
+          <p>const numbers = ["Zdravo", 7, true, undefined, null, { a: 1, b: 2 }, new Date()]</p>
+          <p>/*Mešano*/</p>
+      </section>
+      <br>
+      <p>*U sledećim primerima koristićemo niz <b>brojevi</b> kao primer.</p>
+      <br>
+      <h4>Dužina niza</h4>
+      <section class="card section-1">
+          <p>console.log(brojevi)</p>
+          <p>-> 7</p>
+      </section>
+      <br>
+      <h4>Provera da li je niz</h4>
+      <section class="card section-1">
+          <p>console.log(Array.isArray(brojevi))</p>
+          <p>-> true</p>
+          <p>/*Vraća vrednost true ili false u zavisnosti da li je u pitanju niz ili ne.*/</p>
+      </section>
+      <br>
+      <h4>Uzimanje jedne vrednosti</h4>
+      <section class="card section-1">
+          <p>console.log(brojevi[3])</p>
+          <p>-> 11</p>
+      </section>
+      <br>
+      <h4>Zamena vrednosti</h4>
+      <section class="card section-1">
+          <p>console.log(brojevi[2] = 100)</p>
+          <p>-> 100</p>
+      </section>
+      <br>
+      <h4>Pronalaženje indexa niza</h4>
+      <section class="card section-1">
+          <p>console.log(numbers.indexOf(33));</p>
+          <p>-> 0</p>
+          <p>/*Ovde naravno moramo znati da li ta vrednost postoji u nizu, ako ne vratiće vrednost -1*/</p>
+      </section>
+      <br>
+      <h3>Menjanje strukture nizova</h3>
+      <h4>Dodavanje na kraj niza</h4>
+      <section class="card section-1">
+          <p>brojevi.push(150)</p>
+          <p>console.log(brojevi[7])</p>
+          <p>-> 150</p>
+          <p>/*Zamenjuje poslednji član niza sa novom vrednošću.*/</p>
+      </section>
+      <br>
+      <h4>Dodavanje na početak niza</h4>
+      <section class="card section-1">
+          <p>brojevi.unshift(12)</p>
+          <p>console.log(brojevi[1])</p>
+          <p>-> 12</p>
+          <p>/*Zamenjuje prvi član niza sa novom vrednošću.*/</p>
+      </section>
+      <br>
+      <h4>Uklanjanje sa kraja</h4>
+      <section class="card section-1">
+          <p>brojevi.pop()</p>
+          <p>console.log(brojevi)</p>
+          <p>-> [33, 1, 11, 25, 44, 23]</p>
+          <p>/*Uklanja poslednju vrednost u nizu*/</p>
+      </section>
+      <br>
+      <h4>Uklanjanje sa početka</h4>
+      <section class="card section-1">
+          <p>brojevi.shift()</p>
+          <p>console.log(brojevi)</p>
+          <p>-> [1, 11, 25, 44, 23, 17]</p>
+          <p>/*Uklanja prvu vrednost u nizu*/</p>
+      </section>
+      <br>
+      <h4>Uklanjanje od-do</h4>
+      <section class="card section-1">
+          <p>brojevi.splice(1,3)</p>
+          <p>console.log(brojevi)</p>
+          <p>-> [33, 44, 23, 17]</p>
+          <p>/*Uklanja vrednosti u nizu od indexa 1 do indexa 3, računajuči i vrednost sa indexom 3*/</p>
+      </section>
+      <br>
+      <h4>Postavljanje niza od nazad ka napred</h4>
+      <section class="card section-1">
+          <p>brojevi.reverse()</p>
+          <p>console.log(brojevi)</p>
+          <p>-> [17, 23, 44, 25, 11, 1]</p>
+      </section>
+      <br>
+      <h3>Konkatenacija nizova</h3>
+      <section class="card section-1">
+          <p>console.log(brojevi.concat(string))</p>
+          <p>-> [17, 23, 44, 25, 11, 1, "Pera", "Jabuka", "Zgrada", "Teren"]</p>
+          <p>/*Dodaje sve članove niza na kraj prvog.*/</p>
+      </section>
+      <br>
+      <h3>Sortiranje nizova</h3>
+      <section class="card section-1">
+          <p>console.log(brojevi.sort())</p>
+          <p>console.log(string.sort())</p>
+          <p>-> [1, 11, 17, 23, 25, 33, 44]</p>
+          <p>/*Ređanje od najvećeg ka najmanjem*/</p>
+          <p>-> ["Jabuka", "Pera", "Teren", "Zgrada"]</p>
+          <p>/*Ređanje po abecedi*/</p>
+      </section>
+      <br>
+    </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

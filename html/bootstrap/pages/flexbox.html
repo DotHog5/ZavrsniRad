@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <style>
+    .box-h{
+      height: 250px;
+    }
+  </style>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Flexbox</h1>
+       <p>Flexbox (Fleksibilna kutija - Flexible Box) modul ima za cilj pružanje efikasnijeg načina za polaganje, poravnavanje i raspodelu prostora među elementima u kontejneru, čak i kada je njihova veličina nepoznata i / ili dinamična ( dakle reč "fleks").
+
+        Glavna ideja koja stoji iza fleksibilnog izgleda je da kontejner ima mogućnost da izmeni širinu / visinu predmeta (i redosled) kako bi najbolje ispunio raspoloživi prostor (uglavnom za prilagodi svim vrstama uređaja za prikaz i veličinama ekrana). Fleksibilni kontejner proširuje stavke kako bi popunio slobodni prostor ili ih smanjuje da spreči prelivanje(overflow).</p>
+        <p>Osnovna klasa je d-flex, koja se stavlja na roditeljski element, čime se ujedno svi child elementi raspoređuju.</p>
+        <br>
+        <section class="section-1 card">
+              <p><span><</span>div class="d-flex border border"<span>></span></p>
+               <p> <span><</span>div class="p-4 border  border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+                <p><span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+                <p><span><</span>div class="p-4 border  border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+               <p><span><</span>/div<span>></span></p>
+        </section>
+        <br>
+       <div class="d-flex border border">
+        <div class="p-4 border  border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border  border-dark">Flex Item</div>
+       </div>
+  
+      <br>
+      <br>
+  
+      <h3>Flex unazad</h3>
+       <section class="section-1 card">
+          <p> <span><</span>div class="d-flex border flex-row-reverse"<span>></span></p>
+              <p><span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+              <p><span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+             <p> <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+           <p> <span><</span>/div<span>></span></p>
+       </section>
+      <br>
+      <div class="d-flex border flex-row-reverse">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Justify content</h3>
+      <h4>Start</h4>
+      <section class="section-1 card">
+          <p><span><</span>div class="d-flex border justify-content-start"<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+           <p>   <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+           <p> <span><</span>/div<span>></span>
+      </section>
+      <br>
+      <div class="d-flex border justify-content-start">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Center</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border justify-content-center"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>   <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border justify-content-center">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>End</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border justify-content-end"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>   <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border justify-content-end">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Around</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border justify-content-around"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>   <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border justify-content-around">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Space between</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border justify-content-between"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+        <p>      <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>   <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border justify-content-between">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Flex Column</h3>
+      <p>Uzdužno poravnanje</p>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border box-h flex-column"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h flex-column">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Column Reverse</h3>
+      <section class="section-1 card">
+         <p><span><</span>div class="d-flex border box-h flex-column-reverse"<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h flex-column-reverse">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Vertikalno Poravnanje</h3>
+      <h4>Start</h4>
+      <br>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border box-h align-items-start"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h align-items-start">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Center</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border box-h align-items-center"<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h align-items-center">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>End</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border box-h align-items-end"<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h align-items-end">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Baseline</h4>
+      <section class="section-1 card">
+         <p><span><</span>div class="d-flex border box-h align-items-baseline"<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>    <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>  <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h align-items-baseline">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h4>Stretch</h4>
+      <section class="section-1 card">
+         <p> <span><</span>div class="d-flex border box-h align-items-stretch"<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+          <p>    <span><</span>div class="p-4 border border-dark<span>></span>>Flex Item<span><</span>/div<span>></span></p>
+         <p>     <span><</span>div class="p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+         <p>   <span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h align-items-stretch">
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+        <div class="p-4 border border-dark">Flex Item</div>
+      </div>
+  
+      <br>
+      <br>
+  
+      <h3>Samostalno Poravnanje</h3>
+      <p>Za svaki zaseban element možemo dodati klasu koja ćese ponašati odvojeno od ostalih.</p>
+      <br>
+      <section class="section-1 card">
+      <p> <span><</span>div class="d-flex border box-h border"<span>></span></p>
+      <p><span><</span>div class="align-self-start p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+      <p><span><</span>div class="align-self-center p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+      <p><span><</span>div class="align-self-end p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+      <p><span><</span>div class="align-self-baseline p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+      <p> <span><</span>div class="align-items-stretch p-4 border border-dark"<span>></span>Flex Item<span><</span>/div<span>></span></p>
+      <p><span><</span>/div<span>></span></p>
+      </section>
+      <br>
+      <div class="d-flex border box-h border">
+        <div class="align-self-start p-4 border border-dark">Flex Item</div>
+        <div class="align-self-center p-4 border border-dark">Flex Item</div>
+        <div class="align-self-end p-4 border border-dark">Flex Item</div>
+        <div class="align-self-baseline p-4 border border-dark">Flex Item</div>
+        <div class="align-items-stretch p-4 border border-dark">Flex Item</div>
+      </div>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

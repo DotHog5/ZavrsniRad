@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a>
+          </li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>Pravljenje elemenata</h1>
+        <p>Pravljenje odnosno kreiranje elementa se ogleda u tome da pomoću Javaskripta napravimo html tag sa klasama, atributima i sadržajem i postavimo na stranicu.</p>
+        <br>
+        <section class="section-1 card">
+          <p>const p = document.createElement('p')</p>
+          <p>console.log(p)</p>
+          <p><span>-> <</span>p<span>></span><span><</span>/p<span>></span></p>
+          <p>/*Za početak ćemo deklarisati promenljivu, kojoj ćemo dodeliti vrednost createElement()*/</p>
+        </section>
+        <br>
+        <p>Zatim dodajemo klasu i id na element</p>
+        <br>
+        <section class="section-1 card">
+          <p>p.className = 'collection-item'</p>
+          <p>p.id = 'new-item'</p>
+          <p>console.log(p)</p>
+          <p><p><span>-> <</span>p class="collection-item" id="new-item"<span>></span><span><</span>/p<span>></span></p></p>
+        </section>
+        <br>
+        <p>Potom dodajemo atribute</p>
+        <br>
+        <section class="section-1 card">
+          <p>p.setAttribute('title', 'New Item')</p>
+          <p>console.log(p)</p>
+          <p><p><span>-> <</span>p class="collection-item" id="new-item" title="New Item"<span>></span><span><</span>/p<span>></span></p></p>
+        </section>
+        <br>
+        <p>Moramo dodati i text node i da appendamo</p>
+        <p>Text node je zapravo tekst koji se nalazi između 2 HTML taga(element node je zapravo sam HTML element). Append znači da dodamo taj element</p>
+        <br>
+        <section class="section-1 card">
+          <p>p.append(document.createTextNode('Pozdrav!'))</p>
+          <p>console.log(p)</p>
+          <p><p><span>-> <</span>p class="collection-item" id="new-item" title="New Item"<span>>Pozdrav!</span><span><</span>/p<span>></span></p></p>
+        </section>
+        <br>
+        <p>Sad ćemo kreirati još jedan element i dodati njega na prethodni i sve to ispisati na stranicu</p>
+        <br>
+        <section class="section-1 card">
+          <p>  const link = document.createElement('a')</p>
+
+          <p>  link.setAttribute('href', 'http://www.google.com')</p>
+          
+          <p>  link.innerHTML = ' Klikni ovde'</p>
+            
+           <p> p.appendChild(link)</p>
+        </section>
+        <br>
+        <section class="section-class"></section>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+      const p = document.createElement('p')
+p.className = 'collection-item'
+
+p.id = 'new-item'
+p.setAttribute('title', 'New Item')
+p.append(document.createTextNode('Pozdrav!'))
+
+
+const link = document.createElement('a');
+
+link.setAttribute('href', 'http://www.google.com');
+link.setAttribute('style', 'color:blue');
+
+link.innerHTML = ' Klikni ovde';
+
+p.appendChild(link)
+
+document.querySelector('.section-class').appendChild(p)
+    </script>
+  </body>
+</html>

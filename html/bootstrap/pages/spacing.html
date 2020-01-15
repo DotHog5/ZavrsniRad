@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+       <h1>Spacing</h1>
+       <h3>Margin</h3>
+       <p>Margine predstavljaju spoljni deo nekog elementa i promenom margine pomera se ceo element. Sve margin klase se mogu staviti da budu 0-5.</p>
+       <br>
+       <h4>Margin Bottom</h4>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>p class="mb-0 bg-warning"<span>></span>Margin Bottom 0<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mb-1 bg-warning"<span>></span>Margin Bottom 1<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mb-2 bg-warning"<span>></span>Margin Bottom 2<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mb-3 bg-warning"<span>></span>Margin Bottom 3<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mb-4 bg-warning"<span>></span>Margin Bottom 4<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mb-5 bg-warning"<span>></span>Margin Bottom 5<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+       <p class="mb-0 bg-warning">Margin Bottom 0</p>
+        <p class="mb-1 bg-warning">Margin Bottom 1</p>
+        <p class="mb-2 bg-warning">Margin Bottom 2</p>
+        <p class="mb-3 bg-warning">Margin Bottom 3</p>
+        <p class="mb-4 bg-warning">Margin Bottom 4</p>
+        <p class="mb-5 bg-warning">Margin Bottom 5</p>
+       <br>
+       <h4>Margin Top</h4>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>p class="mt-0 bg-success"<span>></span>Margin Top 0<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mt-1 bg-success"<span>></span>Margin Top 1<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mt-2 bg-success"<span>></span>Margin Top 2<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mt-3 bg-success"<span>></span>Margin Top 3<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mt-4 bg-success"<span>></span>Margin Top 4<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="mt-5 bg-success"<span>></span>Margin Top 5<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+        <p class="mt-0 bg-success">Margin Top 0</p>
+        <p class="mt-1 bg-success">Margin Top 1</p>
+        <p class="mt-2 bg-success">Margin Top 2</p>
+        <p class="mt-3 bg-success">Margin Top 3</p>
+        <p class="mt-4 bg-success">Margin Top 4</p>
+        <p class="mt-5 bg-success">Margin Top 5</p>
+       <br>
+       <h4>Margin Left & Right</h4>
+       <p>Ovde mogu se uzeti vrednosti 0-5 za margine.</p>
+       <br>
+       <section class="section-1 card">
+       <p> <span><</span>p<span>></span><span><</span>span class="ml-5 bg-info"<span>></span>Margin Left 5<span><</span>/span<span>></span> od početka
+          <span><</span>span class="mr-3 bg-info"<span>></span>Margin Right 3 <span><</span>/span<span>></span> do kraja.<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+       <p><span class="ml-5 bg-info">Margin Left 5</span> od početka
+        <span class="mr-3 bg-info">Margin Right 3 </span> do kraja.</p>
+      <br>
+        <p class="section-2">Takođe levu i desnu marginu možemo zajedno postaviti, koristeći mx - margina po x osi</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>p<span>></span>Ovde su <span><</span>span class="mx-4 bg-success"<span>></span>Margin Left & Right 4<span><</span>/span<span>></span>, vidimo da možemo istovremeno namestiti levu i desnu marginu.<span><</span>/p<span>></span></p>
+        </section>
+        <br>
+        <p>Ovde su <span class="mx-4 bg-success">Margin Left & Right 4</span>, vidimo da možemo istovremeno namestiti levu i desnu marginu.</p>
+      <br>
+        <p class="section-2">Kako levu i desnu marginu možemo zajedno postaviti, tako možemo i gornju i donju, my - margina po y osi.</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>p<span>></span>Top tekst<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="my-5 bg-secondary"<span>></span>Margin Top & Bottom 5<span><</span>/p<span>></span></p>
+          <p><span><</span>p<span>></span>Bottom tekst.<span><</span>/p<span>></span></p>
+        </section>
+        <br>
+        <p>Top tekst</p>
+        <p class="my-5 bg-secondary">Margin Top & Bottom 5</p>
+        <p>Bottom tekst.</p>
+      <br>
+      <p class="section-2">Ako želimo na sve strane jednake margine da postavimo, koristimo klasu m.</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>p<span>></span>Top tekst<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="m-5 bg-success"<span>></span>Margin All Sides 5<span><</span>/p<span>></span></p>
+        <p><span><</span>p<span>></span>Bottom tekst<span><</span>/p<span>></span>
+      </section></p>
+      <br>
+      <p>Top tekst</p>
+      <p class="m-5 bg-success">Margin All Sides 5</p>
+      <p>Bottom tekst</p>
+      <br>
+       <h3>Padding</h3>
+       <p>Kad menjamo vrednost paddinga, ustvari menjamo koliko se sadržaj elementa udaljava od svojih granica u kojem se nalazi. Sve Padding klase se mogu staviti da budu 0-5.</p>
+       <br>
+       <h4>Padding Bottom</h4>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>p class="pb-0 bg-warning"<span>></span>Padding Bottom 0<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pb-1 bg-warning"<span>></span>Padding Bottom 1<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pb-2 bg-warning"<span>></span>Padding Bottom 2<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pb-3 bg-warning"<span>></span>Padding Bottom 3<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pb-4 bg-warning"<span>></span>Padding Bottom 4<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pb-5 bg-warning"<span>></span>Padding Bottom 5<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+        <p class="pb-0 bg-warning">Padding Bottom 0</p>
+        <p class="pb-1 bg-warning">Padding Bottom 1</p>
+        <p class="pb-2 bg-warning">Padding Bottom 2</p>
+        <p class="pb-3 bg-warning">Padding Bottom 3</p>
+        <p class="pb-4 bg-warning">Padding Bottom 4</p>
+        <p class="pb-5 bg-warning">Padding Bottom 5</p>
+       <br>
+       <h4>Padding Top</h4>
+       <br>
+       <section class="section-1 card">
+        <p><span><</span>p class="pt-0 bg-success"<span>></span>Padding Top 0<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pt-1 bg-success"<span>></span>Padding Top 1<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pt-2 bg-success"<span>></span>Padding Top 2<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pt-3 bg-success"<span>></span>Padding Top 3<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pt-4 bg-success"<span>></span>Padding Top 4<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="pt-5 bg-success"<span>></span>Padding Top 5<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+        <p class="pt-0 bg-success">Padding Top 0</p>
+        <p class="pt-1 bg-success">Padding Top 1</p>
+        <p class="pt-2 bg-success">Padding Top 2</p>
+        <p class="pt-3 bg-success">Padding Top 3</p>
+        <p class="pt-4 bg-success">Padding Top 4</p>
+        <p class="pt-5 bg-success">Padding Top 5</p>
+       <br>
+       <h4>Padding Left & Right</h4>
+       <p>Ovde mogu se uzeti vrednosti 0-5 za paddinge.</p>
+       <br>
+       <section class="section-1 card">
+       <p> <span><</span>p<span>></span><span><</span>span class="pl-5 bg-info"<span>></span>Padding Left 5<span><</span>/span<span>></span> od početka
+          <span><</span>span class="pr-3 bg-info"<span>></span>Padding Right 3 <span><</span>/span<span>></span> do kraja.<span><</span>/p<span>></span></p>
+       </section>
+       <br>
+       <p><span class="pl-5 bg-info">Padding Left 5</span> od početka
+        <span class="pr-3 bg-info">Padding Right 3 </span> do kraja.</p>
+      <br>
+        <p class="section-2">Levi i desni padding možemo zajedno postaviti, koristeći px - Paddinga po x osi</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>p<span>></span>Ovde su <span><</span>span class="px-4 bg-success"<span>></span>Padding Left & Right 4<span><</span>/span<span>></span>, vidimo da možemo istovremeno namestiti levi i desni padding.<span><</span>/p<span>></span></p>
+        </section>
+        <br>
+        <p>Ovde su <span class="px-4 bg-success">Padding Left & Right 4</span>, vidimo da možemo istovremeno namestiti levi i desni padding</p>
+      <br>
+        <p class="section-2">Kako levi i desni padding možemo zajedno postaviti, tako možemo i gornju i donju, my - padding po y osi.</p>
+        <br>
+        <section class="section-1 card">
+          <p><span><</span>p<span>></span>Top tekst<span><</span>/p<span>></span></p>
+          <p><span><</span>p class="py-5 bg-secondary"<span>></span>Padding Top & Bottom 5<span><</span>/p<span>></span></p>
+          <p><span><</span>p<span>></span>Bottom tekst.<span><</span>/p<span>></span></p>
+        </section>
+        <br>
+        <p>Top tekst</p>
+        <p class="py-5 bg-secondary">Padding Top & Bottom 5</p>
+        <p>Bottom tekst.</p>
+      <br>
+      <p class="section-2">Ako želimo na sve strane jednake paddinge da postavimo, koristimo klasu p.</p>
+      <br>
+      <section class="section-1 card">
+        <p><span><</span>p<span>></span>Top tekst<span><</span>/p<span>></span></p>
+        <p><span><</span>p class="p-5 bg-success"<span>></span>Padding All Sides 5<span><</span>/p<span>></span></p>
+        <p><span><</span>p<span>></span>Bottom tekst<span><</span>/p<span>></span>
+      </section></p>
+      <br>
+      <p>Top tekst</p>
+      <p class="p-5 bg-success">Padding All Sides 5</p>
+      <p>Bottom tekst</p>
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

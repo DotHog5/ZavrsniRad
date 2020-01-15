@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+    <div class="container">
+      <h1>Mouse event</h1>
+      <p>Došli smo do jedne od bitnijih lekcija, eventovi. Eventovi označavaju animacije, promene boja, stila nekog dela veb stranice, prilikom klika miša, ili pritiskom tastera na tasturi(više o ovom u sledećoj lekciji). Postoje desetak mouse eventova koji, u zavisnosti koji je event u pitanju, omogućavaju klikom, duplim klikom, prelaskom miša... da dođe do željene promene.</p>
+      <br>
+      <h3>Click</h3>
+      <p>Svaki addEventListener() ima dva parametra, prvi jeste način na koji će se pozvati funkcija, a drugi je naziv funkcije.</p>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="clk"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p>/*Upotrebljene su bootstrap klase za button*/</p>
+          <p><span><</span>script<span>></span></p>
+          <p>let btn = document.getElementById('clk')</p>
+          <p> btn.addEventListener('click', click)</p>
+          <p> function click(){</p>
+          <p>   btn.style.background = '#ff3333'</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="clk">Button</div>
+      <br>
+      <br>
+      <h3>Doubleclick</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="dbclk"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let double = document.getElementById('dbclk')</p>
+          <p>double.addEventListener('dblclick', doubleclick)</p>
+          <p>function doubleclick(){</p>
+          <p>double.style.background = '#d563d0'</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="dbclk">Button</div>
+      <br>
+      <br>
+      <h3>Mousedown</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="mousedwn"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let mousedwn = document.getElementById('mousedwn')</p>
+          <p>mousedwn.addEventListener('mousedown', mousedown)</p>
+          <p> function mousedown(){</p>
+          <p>   mousedwn.style.background = '#8c00cf'</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="mousedwn">Button</div>
+      <br>
+      <br>
+      <h3>Mouseup</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="mouseup"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let mouseup = document.getElementById('mouseup')</p>
+          <p> mouseup.addEventListener('mouseup', msup)</p>
+          <p>function msup(){</p>
+          <p>  mouseup.style.background = '#5f6aff '</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="mouseup">Button</div>
+      <br>
+      <br>
+      <h3>Mouseenter</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="msenter"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let msenter = document.getElementById('msenter')</p>
+          <p>msenter.addEventListener('mouseenter', menter)</p>
+          <p>function menter(){</p>
+          <p>  msenter.style.background = ' #09a5be   '</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="msenter">Button</div>
+      <br>
+      <br>
+      <h3>Mouseleave</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="msleave"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let msleave = document.getElementById('msleave')</p>
+          <p>msleave.addEventListener('mouseleave', mleave)</p>
+          <p>function mleave(){</p>
+          <p>  msleave.style.background = '#03ca79'</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="msleave">Button</div>
+      <br>
+      <br>
+      <h3>Mouseover</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="msover"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let msover = document.getElementById('msover')</p>
+          <p>msover.addEventListener('mouseover', mover)</p>
+          <p>function mover(){</p>
+          <p>msover.style.background = ' #47ca03 '</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="msover">Button</div>
+      <br>
+      <br>
+      <h3>Mouseout</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="msout"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let msout = document.getElementById('msout')</p>
+          <p>msout.addEventListener('mouseout', mout)</p>
+          <p>function mout(){</p>
+          <p>msout.style.background = ' #fcff13 '</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="msout">Button</div>
+      <br>
+      <br>
+      <h3>Mousemove</h3>
+      <br>
+      <section class="section-1 card">
+          <p><span><</span>div class="btn btn-dark" id="msmove"<span>></span>Button<span><</span>/div<span>></span></p>
+          <p><span><</span>script<span>></span></p>
+          <p>let msmove = document.getElementById('msmove')</p>
+          <p>msmove.addEventListener('mousemove', mmove)</p>
+          <p>function mmove(){</p>
+          <p> msmove.style.background = ' #ff8613 '</p>
+          <p> }</p>
+          <p><span><</span>/script<span>></span></p>
+      </section>
+      <br>
+      <div class="btn btn-dark" id="msmove">Button</div>
+      <br>
+      <br>
+    </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+    <script>
+      // Click
+    let btn = document.getElementById('clk')
+    btn.addEventListener('click', click)
+
+    function click(){
+      btn.style.background = '#ff3333'
+    }
+    // Doubleclick
+    let double = document.getElementById('dbclk')
+    double.addEventListener('dblclick', doubleclick)
+
+    function doubleclick(){ 
+      double.style.background = '#d563d0'
+    }
+    // Mousedown
+    let mousedwn = document.getElementById('mousedwn')
+    mousedwn.addEventListener('mousedown', mousedown)
+
+    function mousedown(){
+      mousedwn.style.background = '#8c00cf'
+    }
+    // Mouseup
+    let mouseup = document.getElementById('mouseup')
+    mouseup.addEventListener('mouseup', msup)
+
+    function msup(){
+      mouseup.style.background = '#5f6aff '
+    }
+    // Mouseenter
+    let msenter = document.getElementById('msenter')
+    msenter.addEventListener('mouseenter', menter)
+
+    function menter(){
+      msenter.style.background = '  #09a5be   '
+    }
+    // Mouseleave
+    let msleave = document.getElementById('msleave')
+    msleave.addEventListener('mouseleave', mleave)
+
+    function mleave(){
+      msleave.style.background = '#03ca79'
+    }
+    // Mouseover
+    let msover = document.getElementById('msover')
+    msover.addEventListener('mouseover', mover)
+
+    function mover(){
+      msover.style.background = '#47ca03'
+    }
+    // Mouseout
+    let msout = document.getElementById('msout')
+    msout.addEventListener('mouseout', mout)
+
+    function mout(){
+      msout.style.background = ' #fcff13 '
+    }
+    // Mousemove
+    let msmove = document.getElementById('msmove')
+    msmove.addEventListener('mousemove', mmove)
+
+    function mmove(){
+      msmove.style.background = ' #ff8613 '
+    }
+
+    </script>
+  </body>
+</html>

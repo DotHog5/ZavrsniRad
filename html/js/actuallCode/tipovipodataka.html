@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/js_page/js_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/js_page/js_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/js_page/js_desktop.css" />
+    <title>JS Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li class="title"><a href="../js.html">Uvod</a></li>
+          <li><b>OSNOVE</b></li>
+          <li>
+              <i class="fas fa-minus"></i><a href="console.html"> Konzola</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="variables.html"> Deklarisanje Promenljivih</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="tipovipodataka.html"> Tipovi Podataka</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="math.html"> Math objekat</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="konkatenacija.html"> Konkatenacija</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="nizovi.html"> Nizovi</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="objectLiterals.html"> Object Literals</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="datumVreme.html"> Datum i Vreme</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="ifIskay.html"> If iskaz</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="funkcije.html"> Funkcije</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="petlje.html"> Petlje</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="windowObject.html"> Window Object</a>
+          </li>
+          <li><b>DOM</b></li>
+          <li>
+            <i class="fas fa-minus"></i><a href="oDOmu.html"> O DOM-u</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pregledDOM.html"> Pregled DOM-a</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaJedanElement.html"> DOM selektori za jedan element</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="domSelektoriZaViseElemenata.html"> DOM selektori za više elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="pravljenjeElemenata.html"> Pravljenje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="uklanjanjeZamenjivanjeElemenata.html"> Uklanjanje i Zamenjivanje Elemenata</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="mouseEvent.html"> Mouse Event</a>
+          </li>
+          <li>
+            <i class="fas fa-minus"></i><a href="kezboardEvent.html"> Keyboard Event</a>
+          </li>
+
+        </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+      <h1>Tipovi Podataka</h1>
+      <br>
+      <p>Promenljiva u Javaskriptu može da sadrži bilo koji podatak. U jednom trenutku može biti string, u drugom number: </p>
+      <br>
+        <section class="card section-1">
+          <p>let message = 'Zdravo'</p>
+          <p>message = 12345</p>
+          <p>console.log(message)</p>
+          <p>-> 12345</p>
+        </section>
+       <br>
+      <p>Programski jezici koji omogućavaju ovo se nazivaju dinamički.
+        Tipove Podataka u Javasktiptu možemo podeliti na primitivne i referentne.
+      </p>
+      <br>
+      <h3>Primitivni Tipovi Podataka</h3>
+      <p>Primitivni tipovi(skalarni ili jednostavni tipovi) čuvaju podatke( npr. string -> "primer"; number -> 123) i njihova vrednost se direktno čuva u memoriji.
+        Postoje 6 vrsta primitivnih tipova podataka:
+        <ul>
+          <li>- string</li>
+          <li>- number</li>
+          <li>- boolean</li>
+          <li>- null</li>
+          <li>- undefined</li>
+          <li>- symbol</li>
+        </ul>
+      </p>
+      <h4>String</h4>
+      <p>String je tip podataka koji u sebi sadrži niz slova/reči, takođe može i brojeva, ali se onda neke funkcionalnosti gube.</p>
+      <br>
+      <section class="card section-1">
+          <p>const ime = 'Marko Ivanić'</p>
+          <p>console.log(typeof ime)</p>
+          <p>-> string</p>
+          <p>/* Sa typeof u konzoli dobijamo naziv tipa podataka  */</p>
+      </section>
+      <br>
+      <h4>Number</h4>
+      <p>Number je tip podataka koji u sebi čuva brojeve.</p>
+      <br>
+      <section class="card section-1">
+          <p>const broj = 33</p>
+          <p>console.log(typeof broj)</p>
+          <p>-> number</p>
+      </section>
+      <br>
+      <h4>Boolean</h4>
+      <p>Tip podataka koji može biti true ili false</p>
+      <br>
+      <section class="card section-1">
+          <p>const bool = false</p>
+          <p>console.log(typeof bool)</p>
+          <p>-> false</p>
+      </section>
+      <br>
+      <h4>Null</h4>
+      <p>Null ne znači da je vrednost promenljive 0, već da nema vrednost</p>
+      <br>
+      <section class="card section-1">
+          <p>const auto = null</p>
+          <p>console.log(typeof auto)</p>
+          <p>/* Rezultat će biti object, ali to je bug, jer se null direktno čuva u memoriji i čuva jednostavne podatke*/</p>
+      </section>
+      <br>
+      <h4>Undefined</h4>
+      <p>Ukoliko ne dodelimo vrednost dobijamo undefined</p>
+      <br>
+      <section class="card section-1">
+          <p>let test</p>
+          <p>console.log(typeof test)</p>
+          <p>-> undefined</p>
+      </section>
+      <br>
+      <h4>Symbol</h4>
+      <p>Novi tip podataka, koji je sa ES6 uveden. Symboli su uvek unikatni, njihove vrednosti ne mogu biti iste, npr: </p>
+      <br>
+      <section class="card section-1">
+          <p>let Sym1 = Symbol("Sym")</p>
+          <p>let Sym2 = Symbol("Sym")</p>
+          <p>console.log(Sym1 == Sym2)</p>
+          <p>-> false</p>
+      </section>
+      <br>
+      <section class="card section-1">
+          <p>let Sym1 = Symbol("Sym")</p>
+          <p>console.log(typeof Sym1)</p>
+          <p>-> symbol</p>
+      </section>
+      <br>
+      <h3>Referentni Tipovi</h3>
+      <p>Zbog toga što se sadržaj referentnog tipa ne može uklopiti u fiksnu količinu memorije koja je dostupna za promenljivu, vrednost memorije referentnog tipa je sama referenca (memorijska adresa).</p>
+      <p>Postoje 3 vrste referentnih tipova podataka:</p>
+      <ul>
+        <li>- niz</li>
+        <li>- objekat</li>
+        <li>- date</li>
+      </ul>
+      <br>
+      <h4>Niz</h4>
+      <p>Koristi se da bi se u jednoj varijabli čuvalo više vrednosti.</p>
+      <br>
+      <section class="card section-1">
+          <p>const hobi = ['film', 'muzika']</p>
+          <p>console.log(typeof hobi)</p>
+          <p>-> object</p>
+      </section>
+      <br>
+      <h4>Objekat</h4>
+      <p>Objekat može sadržati više vrednosti. Piše se u vidu <b>ime : vrednost</b> para.</p>
+      <br>
+      <section class="card section-1">
+          <p> const adresa = { </p>
+          <p> grad: "Novi Sad", </p>
+          <p> država: "Srbija" </p>
+          <p> }; </p>
+          <p>  console.log(typeof adresa); </p>
+          <p>-> object</p>
+      </section>
+      <br>
+      <h4>Date</h4>
+      <p>Stvara instancu koja predstavlja trenutak u formatu nezavisnom od platforme. Objekti koji sadrže datum, sadrže broj koji predstavlja milisekunde od 1. januara 1970. UTC</p>
+      <br>
+      <section class="card section-1">
+          <p> const danas = new Date()</p>
+          <p> console.log(typeof danas) </p>
+          <p>-> object</p>
+      </section>
+      <br>
+    </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/default.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap_page/bs_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../../../css/bootstrap_page/bs_tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../../../css/bootstrap_page/bs_desktop.css" />
+    <title>Bootstrap Tutorijal</title>
+  </head>
+  <body>
+    <!-- Section Header -->
+    <header>
+      <a href="../../../index.html">JS / Bootstrap</a>
+      <div class="menu" id='menu'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Section: Aside -->
+    <aside id="slide">
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li class="title"><a href="../bootstrap.html">Uvod</a></li>
+            <li><b>Utilities</b></li>
+            <li>
+                <i class="fas fa-minus"></i><a href="typography.html"> Typography</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="textAlignment.html"> Poravnanje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="pozicioniranje.html"> Pozicioniranje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="boje.html"> Boje</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="spacing.html"> Spacing</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="velicinaOkvir.html"> Veličina i border</a>
+            </li>
+            <li><b>CSS KOMPONENTE</b></li>
+            <li>
+              <i class="fas fa-minus"></i><a href="buttons.html"> Buttons</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="navigacioniMeni.html"> Navigacioni meni</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="listet.html"> Liste</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="forme.html"> Forme</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="input.html"> Input</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="alertProgresBar.html"> Alerti i progress barovi</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="tabelePaginaija.html"> Tabele i paginacija</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="card.html"> Card</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="medijskiObjekti.html"> Medijski objekti</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="jumbotron.html"> Jumbotron</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="grid.html"> Grid</a>
+            </li>
+            <li>
+              <i class="fas fa-minus"></i><a href="flexbox.html"> Flexbox</a>
+            </li>
+          </ul>
+      </aside>
+
+    <!-- Section: Main -->
+    <main>
+      <div class="container">
+        <h1>Forme</h1>
+        <p>Primeri i smernice za upotrebu stilova kontrole formi, opcija izgleda i prilagođenih komponenti za kreiranje širokog spektra formi. Koriste se najčešće kod registracije, log in ili slanja podataka.</p>
+        <br>
+        <section class="section-1 card">
+            <form>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                  <p><span><</span>label for="ime"<span>></span>Ime<span><</span>/label<span>></span></p>
+                  <p><span><</span>input class="form-control" type="text" id="ime" placeholder="Unesite ime"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p>/*Klase form-group i form-control su najbitnije kod formi, jer upravo one uspostavljaju veze koje prikazuju input polja*/</p>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>label for="email"<span>></span>Email adresa<span><</span>/label<span>></span></p>
+                  <p><span><</span>input class="form-control" type="email" id="email" placeholder="Unesite email"<span>></span></p>
+               <p> <span><</span>/div<span>></span></p>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                  <p><span><</span>label for="kompanija"<span>></span>Kompanija<span><</span>/label<span>></span></p>
+                  <p><span><</span>input class="form-control form-control-lg" type="text" id="company" placeholder="Unesite ime kompanije"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>label for="password"<span>></span>Password<span><</span>/label<span>></span></p>
+                  <p><span><</span>input class="form-control form-control-sm" type="password" id="password" placeholder="Password"<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+              <p>/*Sa klasama form-control-lg odnosno form-control-sm povećavamo odnosno smanjujemo input polja*/</p>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                  <p><span><</span>label for="gender"<span>></span>Rod<span><</span>/label<span>></span></p>
+                  <p><span><</span>select class="form-control w-25" id="gender"<span>></span></p>
+                    <p><span><</span>option<span>></span>Muško<span><</span>/option<span>></span></p>
+                    <p><span><</span>option<span>></span>Žensko<span><</span>/option<span>></span></p>
+                  <p><span><</span>/select<span>></span></p>
+               <p> <span><</span>/div<span>></span></p>
+    
+               <p> <span><</span>div class="form-group"<span>></span></p>
+                  <p><span><</span>label for="message"<span>></span>Message<span><</span>/label<span>></span></p>
+                  <p><span><</span>textarea class="form-control" id="message" rows="3"<span>></span><span><</span>/textarea<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+        
+                <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>label for="file"<span>></span>File input<span><</span>/label<span>></span></p>
+                 <p> <span><</span>input class="form-control-file" type="file" id="file"<span>></span></p>
+                  <p><span><</span>small class="form-text text-muted" id="fileHelp"<span>></span>Max 3mb size<span><</span>/small<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+              <p>/*type="file" označava da će na tom mestu biti taster za upload,a klasa form-control-file ga automatski šalje u sledeći red.*/</p>
+                <p><span><</span>div class="custom-file"<span>></span></p>
+                  <p><span><</span>input class="cutom-file-input" type="file" id="myfile"<span>></span></p>
+                  <p><span><</span>label class="custom-file-label" for="myfile"<span>></span>Choose file<span><</span>/label<span>></span></p>
+                  <p>/*ili ako želimo da to malo lepše izgleda*/</p>
+               <p> <span><</span>/div<span>></span></p>
+                <p><span><</span>br<span>></span></p>
+                <p><span><</span>br<span>></span></p>
+                <p><span><</span>div class="form-group"<span>></span></p>
+                 <p> <span><</span>label for="odabir"<span>></span>Odabir<span><</span>/label<span>></span></p>
+                 <p> <span><</span>input class="custom-range" min="1" max="5" step="1" value="2" type="range"<span>></span></p>
+               <p> <span><</span>/div<span>></span></p>
+              <p>/*Traka u kojoj biramo neku vrednost, koju bi dalje obrađivali u Javaskriptu, PHP-u i sl.*/</p>
+                <p><span><</span>br<span>></span></p>
+          
+                <p><span><</span>button class="btn btn-dark btn-block" type="submit"<span>></span>Submit<span><</span>/button<span>></span></p>
+              <p><span><</span>/form<span>></span>
+        </section>
+        <br>
+        <form>  
+          <div class="form-group">
+            <label for="ime">Ime</label>
+            <input class="form-control" type="text" id="ime" placeholder="Unesite ime">
+          </div>
+          <div class="form-group">
+            <label for="email">Email adresa</label>
+            <input class="form-control" type="email" id="email" placeholder="Unesite email">
+          </div>
+          <div class="form-group">
+            <label for="komapanija">Komapanija</label>
+            <input class="form-control form-control-lg" type="text" id="kompanija" placeholder="Unesite ime kompanije">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control form-control-sm" type="password" id="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="gender">Rod</label>
+            <select class="form-control w-25" id="gender">
+              <option>Muško</option>
+              <option>Žensko</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="file">File input</label>
+            <input class="form-control-file" type="file" id="file">
+            <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
+          </div>         
+          <div class="custom-file">
+            <input class="cutom-file-input" type="file" id="myfile">
+            <label class="custom-file-label" for="myfile">Choose file</label>
+          </div>
+          <br>
+          <br>        
+          <div class="form-group">
+            <label for="odabir">Odabir</label>
+            <input class="custom-range" min="1" max="5" step="1" value="2" type="range">
+          </div> 
+          <br> 
+          <button class="btn btn-dark btn-block" type="submit">Submit</button>
+        </form>
+        <br>
+        <h3>Inline Forma</h3>
+        <p>Kao što i ime govori to je forma u jednoj liniji, često se koristi kod log in-a</p>
+        <br>
+        <section class="section-1 card">
+            <p><span><</span>form class="form-inline"<span>></span></p>
+                <p><span><</span>input class="form-control mr-2" type="text" id="username" placeholder="Unesite korisničko ime"<span>></span></p>
+                <p><span><</span>input class="form-control mr-2" type="text" id="password" placeholder="Password"<span>></span></p>
+               <p><span><</span>div class="form-check"<span>></span></p>
+                  <p><span><</span>label class="form-check-label"<span>></span></p>
+                    <p><span><</span>input class="form-check-input" type="checkbox"<span>></span> Zapamti me</p>
+                 <p> <span><</span>/label<span>></span></p>
+                <p><span><</span>/div<span>></span></p>
+          
+               <p> <span><</span>button class="btn btn-warning ml-2" type="submit"<span>></span>Submit<span><</span>/button<span>></span></p>
+             <p> <span><</span>/form<span>></span></p>
+        </section>
+        <br>
+        
+        <form class="form-inline">
+            <input class="form-control mr-2" type="text" id="username" placeholder="Unesite korisničko ime">
+            <input class="form-control mr-2" type="text" id="password" placeholder="Password">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Zapamti me
+              </label>
+            </div>
+            <button class="btn btn-warning ml-2" type="submit">Submit</button>
+          </form>
+          
+      </div>
+    </main>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="container">
+        <ul>
+          <li>Nemanja Đokić</li>
+          <li>Srbobran</li>
+          <li>djokic.nemanja97@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/test.js"></script>
+  </body>
+</html>

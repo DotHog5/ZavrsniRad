@@ -1,0 +1,16 @@
+main .container .js h2,
+main .container .bootstrap h2 {
+  font-size: 4rem;
+}
+
+main .container .js {
+  position: absolute;
+  top: 15rem;
+  left: 25rem;
+}
+
+main .container .bootstrap {
+  position: absolute;
+  bottom: 15rem;
+  right: 25rem;
+}
